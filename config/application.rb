@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
-require "rails"
+require 'rails'
 # Pick the frameworks you want:
+<<<<<<< HEAD
 require "active_model/railtie"
 require "active_job/railtie"
 require "active_record/railtie"
@@ -11,6 +14,17 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
+=======
+require 'active_model/railtie'
+require 'active_job/railtie'
+require 'active_record/railtie'
+require 'active_storage/engine'
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'action_view/railtie'
+require 'action_cable/engine'
+# require "sprockets/railtie"
+>>>>>>> 1c7f85ae75f038aed8d354578c0dc52861455dcd
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
