@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :favorite do
     user
@@ -9,7 +11,7 @@ FactoryBot.define do
     rating { Faker::Number.between(from: 3.1, to: 5.0) }
     url { Faker::Internet.url }
     image { Faker::Internet.url }
-    hours { "MyString" }
+    hours { 'MyString' }
     phone { Faker::PhoneNumber.cell_phone }
   end
 end

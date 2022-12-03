@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Favorite, type: :model do
@@ -7,13 +9,13 @@ RSpec.describe Favorite, type: :model do
     favorite = create(:favorite)
 
     expect(favorite.title).to be_a String
-    expect(favorite.type).to exists
-    expect(favorite.description).to exists
-    expect(favorite.address).to exists
-    expect(favorite.rating).to exists
-    expect(favorite.url).to exists
-    expect(favorite.image).to exists
-    expect(favorite.hours).to exists
-    expect(favorite.phone).to exists
+    expect(favorite.type).to be_a String
+    expect(favorite.description).to be_a String
+    expect(favorite.address).to be_a String
+    expect(favorite.rating).to be_a Float
+    expect(favorite.url).to be_a String
+    expect(favorite.image).to be_a String
+    expect(favorite.hours).to be_a String
+    expect(favorite.phone).to be_a String
   end
 end
