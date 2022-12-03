@@ -2,7 +2,8 @@
 
 FactoryBot.define do
   factory :user do
-    email { 'MyString' }
-    password { 'MyString' }
+    id { Faker::Number.within(range: 1..10) }
+    email { Faker::Internet.safe_email }
+    password { 'password' }
   end
 end
