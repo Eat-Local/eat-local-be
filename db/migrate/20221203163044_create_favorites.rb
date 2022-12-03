@@ -18,5 +18,5 @@ class CreateFavorites < ActiveRecord::Migration[5.2]
       t.timestamps
     end
   end
-  # rubocop:disable Metrics/MethodLength
+  # rubocop:enable Metrics/MethodLength
 end
