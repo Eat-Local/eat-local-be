@@ -16,10 +16,10 @@ class GraphqlController < ApplicationController
     }
     result = EatLocalBeSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
-  rescue StandardError => err
-    raise err unless Rails.env.development?
+  rescue StandardError => e
+    raise e unless Rails.env.development?
 
-    handle_error_in_development(err)
+    handle_error_in_development(e)
   end
 
   private
@@ -50,6 +50,7 @@ class GraphqlController < ApplicationController
     logger.error err.message
     logger.error err.backtrace.join("\n")
 
-    render json: { errors: [{ message: err.message, backtrace: err.backtrace }], data: {} }, status: :internal_server_error
+    render json: { errors: [{ message: err.message, backtrace: err.backtrace }], data: {} },
+           status: :internal_server_error
   end
 end
