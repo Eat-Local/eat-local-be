@@ -27,27 +27,27 @@
 #     )
 #   end
 # end
-user = User.create!(email: 'faker@fakemail.com', fname: 'Dude', fname: 'Bro')
+user = User.create!(email: 'faker@fakemail.com', fname: 'Dude', lname: 'Bro')
 user.favorites.create!(
-        title: "Faker::Restaurant.name",
-        venue_type: "Faker::Restaurant.type",
-        description: "::Restaurant",
-        address: "Faker::Address.full_address",
-        rating: 4.2,
-        url: "Faker::Internet.url",
-        image: "Faker::Internet.url",
-        hours: 'Mon-Fri 9-5',
-        phone: "Faker::PhoneNumber.cell_phone"
-      )
+  title: 'Faker::Restaurant.name',
+  venue_type: 'Faker::Restaurant.type',
+  description: '::Restaurant',
+  address: 'Faker::Address.full_address',
+  rating: 4.2,
+  url: 'Faker::Internet.url',
+  image: 'Faker::Internet.url',
+  hours: 'Mon-Fri 9-5',
+  phone: 'Faker::PhoneNumber.cell_phone'
+)
 
 user.favorites.create!(
-  title: "Restaurant",
-  venue_type: "New",
-  description: "Another Restaurant",
-  address: "Some Place",
+  title: 'Restaurant',
+  venue_type: 'New',
+  description: 'Another Restaurant',
+  address: 'Some Place',
   rating: 4.2,
-  url: "https://www.url.com",
-  image: "img.place.com",
+  url: 'https://www.url.com',
+  image: 'img.place.com',
   hours: 'Mon-Fri 9-5',
-  phone: "000-000-0000"
+  phone: '000-000-0000'
 )
