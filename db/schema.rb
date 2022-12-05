@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_12_03_163044) do
 
   create_table "favorites", force: :cascade do |t|
     t.string "title"
-    t.string "type"
+    t.string "venue_type"
     t.string "description"
     t.string "address"
     t.float "rating"

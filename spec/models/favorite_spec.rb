@@ -9,7 +9,7 @@ RSpec.describe Favorite, type: :model do
     favorite = create(:favorite)
 
     expect(favorite.title).to be_a String
-    expect(favorite.type).to be_a String
+    expect(favorite.venue_type).to be_a String
     expect(favorite.description).to be_a String
     expect(favorite.address).to be_a String
     expect(favorite.rating).to be_a Float

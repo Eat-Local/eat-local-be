@@ -4,7 +4,7 @@ module Types
   class FavoriteType < Types::BaseObject
     field :id, ID, null: false
     field :title, String
-    field :type, String
+    field :venue_type, String
     field :description, String
     field :address, String
     field :rating, Float
