@@ -1,6 +1,6 @@
-# fly.toml file generated for eat-local-be on 2022-12-02T14:54:54-07:00
+# fly.toml file generated for throbbing-wood-3534 on 2022-12-05T15:49:11-07:00
 
-app = "eat-local-be"
+app = "throbbing-wood-3534"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
