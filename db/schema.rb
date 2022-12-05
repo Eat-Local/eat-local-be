@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_12_03_163044) do
 
   create_table "favorites", force: :cascade do |t|
     t.string "title"
-    t.string "type"
+    t.string "venue_type"
     t.string "description"
     t.string "address"
     t.float "rating"
@@ -33,7 +33,8 @@ ActiveRecord::Schema.define(version: 2022_12_03_163044) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.string "password"
+    t.string "fname"
+    t.string "lname"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
