@@ -10,7 +10,8 @@
 10.times do
   user = User.create(
     email: Faker::Internet.email,
-    password: Faker::Internet.password
+    fname: Faker::Name.first_name,
+    lname: Faker::Name.last_name
   )
   rand(6).times do
     user.favorites.create(
