@@ -1,23 +1,27 @@
-class Mutations::CreateUser < Mutations::BaseMutation
-  argument :email, String, required: true
-  argument :fname, String, required: true
-  argument :lname, String, required: true
+# frozen_string_literal: true
 
-  field :user, Types::UserType, null: false
-  field :errors, [String], null: false
+module Mutations
+  class CreateUser < Mutations::BaseMutation
+    argument :email, String, required: true
+    argument :fname, String, required: true
+    argument :lname, String, required: true
 
-  def resolve(email:, fname:, lname:)
-    user = User.new(email: email, fname: fname, lname: lname)
-        if user.save
-      {
-        user: user,
-        errors: []
-      }
-    else
-      {
-        user: nil,
-        errors: user.errors.full_messages
-      }
+    field :user, Types::UserType, null: false
+    field :errors, [String], null: false
+
+    def resolve(email:, fname:, lname:)
+      user = User.new(email: email, fname: fname, lname: lname)
+      if user.save
+        {
+          user: user,
+          errors: []
+        }
+      else
+        {
+          user: nil,
+          errors: user.errors.full_messages
+        }
+      end
     end
   end
 end
