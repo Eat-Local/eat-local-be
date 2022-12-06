@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class YelpService
   def self.get_businesses(location, business)
-   response = conn.get("/v3/businesses/search?") do |request|
-    request.params['term'] = "locally owned #{business}"
-    request.params['location'] = location
-   end
-   parse(response)
+    response = conn.get('/v3/businesses/search?') do |request|
+      request.params['term'] = "locally owned #{business}"
+      request.params['location'] = location
+    end
+    parse(response)
   end
 
   def self.conn
@@ -12,7 +14,7 @@ class YelpService
       faraday.params['limit'] = '40'
       faraday.params['sort_by'] = 'distance'
       faraday.params['radius'] = '16100'
-      faraday.headers['Authorization'] = ENV['YELP_API_KEY']
+      faraday.headers['Authorization'] = "Bearer #{ENV['YELP_API_KEY']}"
     end
   end
 
