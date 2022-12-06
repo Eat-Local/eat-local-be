@@ -32,7 +32,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'figaro'
 gem 'graphql'
-gem 'sqlite3', '~> 1.3.13'
+# gem 'sqlite3', '~> 1.3.13'
 gem 'graphiql-rails'
 
 
