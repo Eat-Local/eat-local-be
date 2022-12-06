@@ -1,0 +1,341 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=40&location=Frisco,%20CO&radius=16100&sort_by=distance&term=locally%20owned%20brewery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer qJbWMO0dR5e1R2Ct-5hhhGqu1zFIWijMFZNdbEMyltQLfH79viaTuTi_NT80xYMNyfAEJkjobK889xM9F0lYQUie7kOW-g6qN1awpPj_v8xacW-ZA4PlFEhP4rOPY3Yx
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4979'
+      Ratelimit-Resettime:
+      - '2022-12-07T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-64bdc8b4bb-xjkpp; site=public_api_v3
+      X-Zipkin-Id:
+      - 9fd07767e4f18a7b
+      X-B3-Sampled:
+      - '0'
+      X-Cloudmap:
+      - routing_useast1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-143-useast1bprod
+      X-Extlb:
+      - 10-65-175-143-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 06 Dec 2022 23:32:00 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dal2120125-DAL
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "ZkHo2gAdmD4U5oNG4smoIQ", "alias": "outer-range-brewing-frisco-2",
+        "name": "Outer Range Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xd-3nZD93U6PpWfmLTJ20w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/outer-range-brewing-frisco-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 205, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.58925, "longitude": -106.09902},
+        "transactions": [], "price": "$$", "location": {"address1": "182 Lusher Ct",
+        "address2": "Unit 2", "address3": "", "city": "Frisco", "zip_code": "80443",
+        "country": "US", "state": "CO", "display_address": ["182 Lusher Ct", "Unit
+        2", "Frisco, CO 80443"]}, "phone": "+19704558709", "display_phone": "(970)
+        455-8709", "distance": 662.516483368}, {"id": "EtRmvr7QKrOEdi9dUR7-3Q", "alias":
+        "highside-brewing-frisco-3", "name": "Highside Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/JiXKRxk0K18jHw2Ai_BpHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/highside-brewing-frisco-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 163, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "pubs", "title": "Pubs"}, {"alias": "beerbar", "title": "Beer Bar"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.57632, "longitude": -106.09287},
+        "transactions": [], "price": "$$", "location": {"address1": "720 Main St",
+        "address2": null, "address3": "", "city": "Frisco", "zip_code": "80435", "country":
+        "US", "state": "CO", "display_address": ["720 Main St", "Frisco, CO 80435"]},
+        "phone": "+19706682337", "display_phone": "(970) 668-2337", "distance": 1075.445913287452},
+        {"id": "2YAjwf5dVRdMR6-HGMwIJA", "alias": "angry-james-brewery-silverthorne-2",
+        "name": "Angry James Brewery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Rjyo5q9Qh93yl5K-mmfEHg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angry-james-brewery-silverthorne-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 94, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.6322, "longitude": -106.07619},
+        "transactions": [], "price": "$", "location": {"address1": "421 Adams Ave",
+        "address2": "", "address3": null, "city": "Silverthorne", "zip_code": "80498",
+        "country": "US", "state": "CO", "display_address": ["421 Adams Ave", "Silverthorne,
+        CO 80498"]}, "phone": "+19704558800", "display_phone": "(970) 455-8800", "distance":
+        5820.986618297931}, {"id": "C4Hg_hDr5lH-gSUcaxB-jA", "alias": "the-bakers-brewery-silverthorne",
+        "name": "The Bakers'' Brewery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nqkuWJoAi32C817RxJS49Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bakers-brewery-silverthorne?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 313, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tradamerican", "title": "American
+        (Traditional)"}], "rating": 3.5, "coordinates": {"latitude": 39.62987675764407,
+        "longitude": -106.06765119988928}, "transactions": [], "price": "$$", "location":
+        {"address1": "531 Silverthorne Ln", "address2": "", "address3": "", "city":
+        "Silverthorne", "zip_code": "80498", "country": "US", "state": "CO", "display_address":
+        ["531 Silverthorne Ln", "Silverthorne, CO 80498"]}, "phone": "+19704680170",
+        "display_phone": "(970) 468-0170", "distance": 5892.189494933431}, {"id":
+        "DWuQ-lO6Zd7syZxa4X0gQQ", "alias": "dillon-dam-brewery-dillon", "name": "Dillon
+        Dam Brewery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/rL6RcS3RRHmEw8lTqfhCCw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dillon-dam-brewery-dillon?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1279, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "brewpubs",
+        "title": "Brewpubs"}], "rating": 4.0, "coordinates": {"latitude": 39.62755430874085,
+        "longitude": -106.06029196720573}, "transactions": [], "price": "$$", "location":
+        {"address1": "100 Little Dam St", "address2": "", "address3": "", "city":
+        "Dillon", "zip_code": "80435", "country": "US", "state": "CO", "display_address":
+        ["100 Little Dam St", "Dillon, CO 80435"]}, "phone": "+19702627777", "display_phone":
+        "(970) 262-7777", "distance": 6011.922718738088}, {"id": "oXVu-6dGO7u4IAUgh2KRIQ",
+        "alias": "pug-ryans-brewery-dillon", "name": "Pug Ryans Brewery", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/tNr7pMBa1OeAb5ToVtqiYg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/pug-ryans-brewery-dillon?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 479, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "brewpubs", "title": "Brewpubs"}, {"alias": "tikibars",
+        "title": "Tiki Bars"}], "rating": 3.5, "coordinates": {"latitude": 39.62808,
+        "longitude": -106.0465}, "transactions": [], "price": "$$", "location": {"address1":
+        "104 Village Pl", "address2": "", "address3": "", "city": "Dillon", "zip_code":
+        "80435", "country": "US", "state": "CO", "display_address": ["104 Village
+        Pl", "Dillon, CO 80435"]}, "phone": "+19704682145", "display_phone": "(970)
+        468-2145", "distance": 6809.187612855464}, {"id": "mcQpzb53CWPY0sJ1as4FvQ",
+        "alias": "broken-compass-brewing-breckenridge", "name": "Broken Compass Brewing",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BuSMlB7FNKvUymApIiIUhQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/broken-compass-brewing-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 376, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 5.0, "coordinates": {"latitude": 39.5147604154871, "longitude":
+        -106.053410611114}, "transactions": [], "price": "$$", "location": {"address1":
+        "68 Continental Ct", "address2": "Unit B12", "address3": "", "city": "Breckenridge",
+        "zip_code": "80424", "country": "US", "state": "CO", "display_address": ["68
+        Continental Ct", "Unit B12", "Breckenridge, CO 80424"]}, "phone": "+19703682772",
+        "display_phone": "(970) 368-2772", "distance": 8680.002463460873}, {"id":
+        "pUP_2T7OQZB-yLdMGiifaw", "alias": "breckenridge-brewery-and-pub-breckenridge",
+        "name": "Breckenridge Brewery & Pub", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/L_hu5UuBeR3grddczomaKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/breckenridge-brewery-and-pub-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 908, "categories": [{"alias": "brewpubs", "title": "Brewpubs"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.4761686658885, "longitude":
+        -106.04382027001}, "transactions": [], "price": "$$", "location": {"address1":
+        "600 S Main St", "address2": "", "address3": "", "city": "Breckenridge", "zip_code":
+        "80424", "country": "US", "state": "CO", "display_address": ["600 S Main St",
+        "Breckenridge, CO 80424"]}, "phone": "+19704531550", "display_phone": "(970)
+        453-1550", "distance": 12917.819393100195}, {"id": "B_g1mVspuid-LLS4ACtOAQ",
+        "alias": "syndicate-brewing-company-silverthorne", "name": "Syndicate Brewing
+        Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/SzmHQRr1G1lvqWNTwhVlrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/syndicate-brewing-company-silverthorne?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 2, "categories": [{"alias": "beerbar", "title": "Beer Bar"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.62668, "longitude": -106.06481},
+        "transactions": [], "location": {"address1": "203 Summit Pl", "address2":
+        null, "address3": "", "city": "Silverthorne", "zip_code": "80498", "country":
+        "US", "state": "CO", "display_address": ["203 Summit Pl", "Silverthorne, CO
+        80498"]}, "phone": "+19704856799", "display_phone": "(970) 485-6799", "distance":
+        5713.569265390937}, {"id": "pvMLljNCesfB299kK_0_1Q", "alias": "rocky-mountain-underground-breckenridge",
+        "name": "Rocky Mountain Underground", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/iJl2kBGTw_KmF88NpnMPCQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rocky-mountain-underground-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 37, "categories": [{"alias": "outdoorgear", "title": "Outdoor
+        Gear"}, {"alias": "skishops", "title": "Ski & Snowboard Shops"}, {"alias":
+        "beerbar", "title": "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude":
+        39.48152, "longitude": -106.04576}, "transactions": [], "price": "$$", "location":
+        {"address1": "114 S Main St", "address2": null, "address3": "", "city": "Breckenridge",
+        "zip_code": "80424", "country": "US", "state": "CO", "display_address": ["114
+        S Main St", "Breckenridge, CO 80424"]}, "phone": "+19707712121", "display_phone":
+        "(970) 771-2121", "distance": 12302.323124721175}], "total": 10, "region":
+        {"center": {"longitude": -106.10115051269531, "latitude": 39.58359711005524}}}'
+  recorded_at: Tue, 06 Dec 2022 23:32:00 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=40&location=Frisco,%20CO&radius=16100&sort_by=distance&term=locally%20owned%20brewery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer qJbWMO0dR5e1R2Ct-5hhhGqu1zFIWijMFZNdbEMyltQLfH79viaTuTi_NT80xYMNyfAEJkjobK889xM9F0lYQUie7kOW-g6qN1awpPj_v8xacW-ZA4PlFEhP4rOPY3Yx
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-64bdc8b4bb-5qz6k; site=public_api_v3
+      X-Zipkin-Id:
+      - 5c00b5ed1409d190
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-12-07T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4978'
+      X-Cloudmap:
+      - routing_useast1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-102-227-useast1aprod
+      X-Extlb:
+      - 10-65-102-227-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 06 Dec 2022 23:32:08 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dal21280-DAL
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "ZkHo2gAdmD4U5oNG4smoIQ", "alias": "outer-range-brewing-frisco-2",
+        "name": "Outer Range Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xd-3nZD93U6PpWfmLTJ20w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/outer-range-brewing-frisco-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 205, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.58925, "longitude": -106.09902},
+        "transactions": [], "price": "$$", "location": {"address1": "182 Lusher Ct",
+        "address2": "Unit 2", "address3": "", "city": "Frisco", "zip_code": "80443",
+        "country": "US", "state": "CO", "display_address": ["182 Lusher Ct", "Unit
+        2", "Frisco, CO 80443"]}, "phone": "+19704558709", "display_phone": "(970)
+        455-8709", "distance": 662.516483368}, {"id": "EtRmvr7QKrOEdi9dUR7-3Q", "alias":
+        "highside-brewing-frisco-3", "name": "Highside Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/JiXKRxk0K18jHw2Ai_BpHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/highside-brewing-frisco-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 163, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "pubs", "title": "Pubs"}, {"alias": "beerbar", "title": "Beer Bar"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.57632, "longitude": -106.09287},
+        "transactions": [], "price": "$$", "location": {"address1": "720 Main St",
+        "address2": null, "address3": "", "city": "Frisco", "zip_code": "80435", "country":
+        "US", "state": "CO", "display_address": ["720 Main St", "Frisco, CO 80435"]},
+        "phone": "+19706682337", "display_phone": "(970) 668-2337", "distance": 1075.445913287452},
+        {"id": "2YAjwf5dVRdMR6-HGMwIJA", "alias": "angry-james-brewery-silverthorne-2",
+        "name": "Angry James Brewery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Rjyo5q9Qh93yl5K-mmfEHg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angry-james-brewery-silverthorne-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 94, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.6322, "longitude": -106.07619},
+        "transactions": [], "price": "$", "location": {"address1": "421 Adams Ave",
+        "address2": "", "address3": null, "city": "Silverthorne", "zip_code": "80498",
+        "country": "US", "state": "CO", "display_address": ["421 Adams Ave", "Silverthorne,
+        CO 80498"]}, "phone": "+19704558800", "display_phone": "(970) 455-8800", "distance":
+        5820.986618297931}, {"id": "C4Hg_hDr5lH-gSUcaxB-jA", "alias": "the-bakers-brewery-silverthorne",
+        "name": "The Bakers'' Brewery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nqkuWJoAi32C817RxJS49Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bakers-brewery-silverthorne?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 313, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tradamerican", "title": "American
+        (Traditional)"}], "rating": 3.5, "coordinates": {"latitude": 39.62987675764407,
+        "longitude": -106.06765119988928}, "transactions": [], "price": "$$", "location":
+        {"address1": "531 Silverthorne Ln", "address2": "", "address3": "", "city":
+        "Silverthorne", "zip_code": "80498", "country": "US", "state": "CO", "display_address":
+        ["531 Silverthorne Ln", "Silverthorne, CO 80498"]}, "phone": "+19704680170",
+        "display_phone": "(970) 468-0170", "distance": 5892.189494933431}, {"id":
+        "DWuQ-lO6Zd7syZxa4X0gQQ", "alias": "dillon-dam-brewery-dillon", "name": "Dillon
+        Dam Brewery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/rL6RcS3RRHmEw8lTqfhCCw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dillon-dam-brewery-dillon?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1279, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "brewpubs",
+        "title": "Brewpubs"}], "rating": 4.0, "coordinates": {"latitude": 39.62755430874085,
+        "longitude": -106.06029196720573}, "transactions": [], "price": "$$", "location":
+        {"address1": "100 Little Dam St", "address2": "", "address3": "", "city":
+        "Dillon", "zip_code": "80435", "country": "US", "state": "CO", "display_address":
+        ["100 Little Dam St", "Dillon, CO 80435"]}, "phone": "+19702627777", "display_phone":
+        "(970) 262-7777", "distance": 6011.922718738088}, {"id": "oXVu-6dGO7u4IAUgh2KRIQ",
+        "alias": "pug-ryans-brewery-dillon", "name": "Pug Ryans Brewery", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/tNr7pMBa1OeAb5ToVtqiYg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/pug-ryans-brewery-dillon?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 479, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "brewpubs", "title": "Brewpubs"}, {"alias": "tikibars",
+        "title": "Tiki Bars"}], "rating": 3.5, "coordinates": {"latitude": 39.62808,
+        "longitude": -106.0465}, "transactions": [], "price": "$$", "location": {"address1":
+        "104 Village Pl", "address2": "", "address3": "", "city": "Dillon", "zip_code":
+        "80435", "country": "US", "state": "CO", "display_address": ["104 Village
+        Pl", "Dillon, CO 80435"]}, "phone": "+19704682145", "display_phone": "(970)
+        468-2145", "distance": 6809.187612855464}, {"id": "mcQpzb53CWPY0sJ1as4FvQ",
+        "alias": "broken-compass-brewing-breckenridge", "name": "Broken Compass Brewing",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BuSMlB7FNKvUymApIiIUhQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/broken-compass-brewing-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 376, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 5.0, "coordinates": {"latitude": 39.5147604154871, "longitude":
+        -106.053410611114}, "transactions": [], "price": "$$", "location": {"address1":
+        "68 Continental Ct", "address2": "Unit B12", "address3": "", "city": "Breckenridge",
+        "zip_code": "80424", "country": "US", "state": "CO", "display_address": ["68
+        Continental Ct", "Unit B12", "Breckenridge, CO 80424"]}, "phone": "+19703682772",
+        "display_phone": "(970) 368-2772", "distance": 8680.002463460873}, {"id":
+        "pUP_2T7OQZB-yLdMGiifaw", "alias": "breckenridge-brewery-and-pub-breckenridge",
+        "name": "Breckenridge Brewery & Pub", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/L_hu5UuBeR3grddczomaKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/breckenridge-brewery-and-pub-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 908, "categories": [{"alias": "brewpubs", "title": "Brewpubs"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.4761686658885, "longitude":
+        -106.04382027001}, "transactions": [], "price": "$$", "location": {"address1":
+        "600 S Main St", "address2": "", "address3": "", "city": "Breckenridge", "zip_code":
+        "80424", "country": "US", "state": "CO", "display_address": ["600 S Main St",
+        "Breckenridge, CO 80424"]}, "phone": "+19704531550", "display_phone": "(970)
+        453-1550", "distance": 12917.819393100195}, {"id": "B_g1mVspuid-LLS4ACtOAQ",
+        "alias": "syndicate-brewing-company-silverthorne", "name": "Syndicate Brewing
+        Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/SzmHQRr1G1lvqWNTwhVlrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/syndicate-brewing-company-silverthorne?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 2, "categories": [{"alias": "beerbar", "title": "Beer Bar"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.62668, "longitude": -106.06481},
+        "transactions": [], "location": {"address1": "203 Summit Pl", "address2":
+        null, "address3": "", "city": "Silverthorne", "zip_code": "80498", "country":
+        "US", "state": "CO", "display_address": ["203 Summit Pl", "Silverthorne, CO
+        80498"]}, "phone": "+19704856799", "display_phone": "(970) 485-6799", "distance":
+        5713.569265390937}, {"id": "pvMLljNCesfB299kK_0_1Q", "alias": "rocky-mountain-underground-breckenridge",
+        "name": "Rocky Mountain Underground", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/iJl2kBGTw_KmF88NpnMPCQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rocky-mountain-underground-breckenridge?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 37, "categories": [{"alias": "outdoorgear", "title": "Outdoor
+        Gear"}, {"alias": "skishops", "title": "Ski & Snowboard Shops"}, {"alias":
+        "beerbar", "title": "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude":
+        39.48152, "longitude": -106.04576}, "transactions": [], "price": "$$", "location":
+        {"address1": "114 S Main St", "address2": null, "address3": "", "city": "Breckenridge",
+        "zip_code": "80424", "country": "US", "state": "CO", "display_address": ["114
+        S Main St", "Breckenridge, CO 80424"]}, "phone": "+19707712121", "display_phone":
+        "(970) 771-2121", "distance": 12302.323124721175}], "total": 10, "region":
+        {"center": {"longitude": -106.10115051269531, "latitude": 39.58359711005524}}}'
+  recorded_at: Tue, 06 Dec 2022 23:32:07 GMT
+recorded_with: VCR 6.1.0
