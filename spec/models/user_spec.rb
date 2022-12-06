@@ -5,6 +5,10 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   it { should have_many :favorites }
 
+
+  it { should validate_presence_of :email }
+  it { should validate_uniqueness_of :email }
+
   describe 'user attributes' do
     it 'has attributes' do
       user = create(:user, email: 'user@email.com')
