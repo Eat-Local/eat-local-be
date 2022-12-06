@@ -24,3 +24,6 @@ Rails/FilePath:
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
   Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false

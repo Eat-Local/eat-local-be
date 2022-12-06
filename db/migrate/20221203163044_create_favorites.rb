@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class CreateFavorites < ActiveRecord::Migration[5.2]
-  # rubocop:disable Metrics/MethodLength
   def change
     create_table :favorites do |t|
       t.string :title
@@ -18,5 +17,4 @@ class CreateFavorites < ActiveRecord::Migration[5.2]
       t.timestamps
     end
   end
-  # rubocop:enable Metrics/MethodLength
 end
