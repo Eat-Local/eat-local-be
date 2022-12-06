@@ -84,4 +84,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Rack-CORS allowed origin in this environment
+  config.allowed_cors_origins = ['https://frontend.url']
 end
