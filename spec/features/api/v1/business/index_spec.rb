@@ -11,7 +11,7 @@ RSpec.describe 'Businesses | Index', type: :request do
 
       business_response = JSON.parse(response.body, symbolize_names: true)
       business_response[:data].each do |business|
-        expect(business[:id]).to eq nil
+        expect(business).to have_key(:id)
         expect(business[:type]).to eq 'business'
         expect(business[:attributes]).to be_an Hash
         expect(business[:attributes][:title]).to be_an String
