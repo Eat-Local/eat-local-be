@@ -86,5 +86,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Rack-CORS allowed origin in this environment
-  config.allowed_cors_origins = ['https://frontend.url']
+  config.allowed_cors_origins = ['https://eatlocal.vercel.app']
 end
