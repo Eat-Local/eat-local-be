@@ -27,3 +27,6 @@ Style/Documentation:
 
 Metrics/MethodLength:
   Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false

@@ -18,12 +18,11 @@ ActiveRecord::Schema.define(version: 2022_12_03_163044) do
   create_table "favorites", force: :cascade do |t|
     t.string "title"
     t.string "venue_type"
-    t.string "description"
     t.string "address"
     t.float "rating"
     t.string "url"
     t.string "image"
-    t.string "hours"
+    t.string "is_closed"
     t.string "phone"
     t.bigint "user_id"
     t.datetime "created_at", null: false

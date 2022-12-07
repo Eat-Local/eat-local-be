@@ -5,12 +5,11 @@ module Types
     field :id, ID, null: false
     field :title, String
     field :venue_type, String
-    field :description, String
     field :address, String
     field :rating, Float
     field :url, String
     field :image, String
-    field :hours, String
+    field :is_closed, String
     field :phone, String
     field :user_id, Integer
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false

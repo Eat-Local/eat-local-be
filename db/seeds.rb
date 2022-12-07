@@ -17,12 +17,11 @@
     user.favorites.create(
       title: Faker::Restaurant.name,
       venue_type: Faker::Restaurant.type,
-      description: Faker::Restaurant.description,
       address: Faker::Address.full_address,
       rating: Faker::Number.between(from: 3.1, to: 5.0).round(1),
       url: Faker::Internet.url,
       image: Faker::Internet.url,
-      hours: 'Mon-Fri 9-5',
+      is_closed: 'true',
       phone: Faker::PhoneNumber.cell_phone
     )
   end
