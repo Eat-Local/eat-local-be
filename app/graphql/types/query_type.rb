@@ -20,7 +20,7 @@ module Types
     end
 
     def user(email:)
-      User.find_by(email)
+      User.find_by(email: email)
     end
   end
 end
