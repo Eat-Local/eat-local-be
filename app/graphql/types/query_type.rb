@@ -16,11 +16,11 @@ module Types
     end
 
     field :user, Types::UserType, null: false do
-      argument :id, ID, required: true
+      argument :email, ID, required: true
     end
 
-    def user(id:)
-      User.find(id)
+    def user(email:)
+      User.find_by(email)
     end
   end
 end
