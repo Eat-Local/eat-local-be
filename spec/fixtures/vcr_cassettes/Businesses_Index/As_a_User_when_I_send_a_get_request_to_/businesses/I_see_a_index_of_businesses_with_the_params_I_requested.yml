@@ -1,0 +1,474 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=40&location=littleton,%20CO&radius=16100&sort_by=distance&term=locally%20owned%20brewery
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer qJbWMO0dR5e1R2Ct-5hhhGqu1zFIWijMFZNdbEMyltQLfH79viaTuTi_NT80xYMNyfAEJkjobK889xM9F0lYQUie7kOW-g6qN1awpPj_v8xacW-ZA4PlFEhP4rOPY3Yx
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4992'
+      X-Routing-Service:
+      - routing-main--useast1-64bdc8b4bb-p2sfk; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2022-12-08T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - b7ccb66aaf5a92b9
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_useast1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-102-227-useast1aprod
+      X-Extlb:
+      - 10-65-102-227-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 07 Dec 2022 18:06:29 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dal21250-DAL
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "VJvr1pPvS2_KUrrSdC_5ug", "alias": "breckenridge-brewery-littleton-2",
+        "name": "Breckenridge Brewery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4Vw3meGwxCeYAen1tBfuNA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/breckenridge-brewery-littleton-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 288, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.594287, "longitude": -105.0246389},
+        "transactions": [], "price": "$$", "location": {"address1": "2990 Brewery
+        Ln", "address2": "", "address3": "", "city": "Littleton", "zip_code": "80120",
+        "country": "US", "state": "CO", "display_address": ["2990 Brewery Ln", "Littleton,
+        CO 80120"]}, "phone": "+13036232739", "display_phone": "(303) 623-2739", "distance":
+        580.6026201622744}, {"id": "IJUSGQ-CokdnL0RiXeHE-A", "alias": "locavore-beer-works-littleton",
+        "name": "Locavore Beer Works", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/1zciD286UKsvnSCrHNXDdQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/locavore-beer-works-littleton?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 177, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.608583, "longitude": -105.036921},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "5950 S Platte Canyon Rd", "address2": null, "address3": "", "city": "Littleton",
+        "zip_code": "80123", "country": "US", "state": "CO", "display_address": ["5950
+        S Platte Canyon Rd", "Littleton, CO 80123"]}, "phone": "+17204764419", "display_phone":
+        "(720) 476-4419", "distance": 2110.0597695229394}, {"id": "HK5QJaFjjinCmyAVBbeFhQ",
+        "alias": "rock-bottom-highlands-ranch", "name": "Rock Bottom", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/irYriecBcQErgBbAS6UkXA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/rock-bottom-highlands-ranch?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 168, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "breweries", "title": "Breweries"}], "rating":
+        3.5, "coordinates": {"latitude": 39.55512754, "longitude": -105.00754742},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "1505 Park Central Dr", "address2": "", "address3": null, "city": "Highlands
+        Ranch", "zip_code": "80126", "country": "US", "state": "CO", "display_address":
+        ["1505 Park Central Dr", "Highlands Ranch, CO 80126"]}, "phone": "+17207998110",
+        "display_phone": "(720) 799-8110", "distance": 4654.228873544499}, {"id":
+        "pzqhX1JJizQUxLV4yRAlZw", "alias": "grist-brewing-company-highlands-ranch",
+        "name": "Grist Brewing Company", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/1ChvLOSKvPIOJLVFWykVtg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/grist-brewing-company-highlands-ranch?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 155, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.5491124, "longitude": -105.0339158},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "9150
+        Commerce Center Cir", "address2": "Ste 300", "address3": "", "city": "Highlands
+        Ranch", "zip_code": "80129", "country": "US", "state": "CO", "display_address":
+        ["9150 Commerce Center Cir", "Ste 300", "Highlands Ranch, CO 80129"]}, "phone":
+        "+17203604782", "display_phone": "(720) 360-4782", "distance": 5399.0487165438335},
+        {"id": "qmk0gh_NtdtiZx0oj4a-1w", "alias": "dead-hippie-brewing-sheridan",
+        "name": "Dead Hippie Brewing", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-8hWTn64USUqMp3Pejeexg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dead-hippie-brewing-sheridan?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 60, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.64926507726951, "longitude":
+        -105.00402667262661}, "transactions": [], "price": "$", "location": {"address1":
+        "3701 S Santa Fe Dr", "address2": "Unit 7", "address3": "", "city": "Sheridan",
+        "zip_code": "80110", "country": "US", "state": "CO", "display_address": ["3701
+        S Santa Fe Dr", "Unit 7", "Sheridan, CO 80110"]}, "phone": "+17204467961",
+        "display_phone": "(720) 446-7961", "distance": 6031.096101189937}, {"id":
+        "ERWJw2wPXupRCfoBysxL2Q", "alias": "living-the-dream-brewing-littleton", "name":
+        "Living The Dream Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9J3YS9UC2hpIsMZOzYRbHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/living-the-dream-brewing-littleton?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 207, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.5403327941895, "longitude":
+        -105.039833068848}, "transactions": [], "price": "$$", "location": {"address1":
+        "12305 Dumont Way", "address2": "Unit A", "address3": "", "city": "Littleton",
+        "zip_code": "80125", "country": "US", "state": "CO", "display_address": ["12305
+        Dumont Way", "Unit A", "Littleton, CO 80125"]}, "phone": "+13032849585", "display_phone":
+        "(303) 284-9585", "distance": 6475.351013947225}, {"id": "zer-0JgqiMp07DBcY2G39w",
+        "alias": "brewability-and-pizzability-englewood", "name": "Brewability & Pizzability
+        ", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Xclrge5UjZlP6_hCjTvlEQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/brewability-and-pizzability-englewood?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 86, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "specialed", "title": "Special Education"}, {"alias": "pizza", "title":
+        "Pizza"}], "rating": 5.0, "coordinates": {"latitude": 39.654158, "longitude":
+        -104.987951}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        {"address1": "3445 S Broadway", "address2": "", "address3": null, "city":
+        "Englewood", "zip_code": "80113", "country": "US", "state": "CO", "display_address":
+        ["3445 S Broadway", "Englewood, CO 80113"]}, "phone": "+13035980809", "display_phone":
+        "(303) 598-0809", "distance": 6954.173437310187}, {"id": "QgwfMcFmw1Scfz2Oq6EhOA",
+        "alias": "blue-spruce-brewing-centennial-centennial", "name": "Blue Spruce
+        Brewing - Centennial", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/aO-BrsVBhWoaDUOx6zEcqw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blue-spruce-brewing-centennial-centennial?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 227, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.5661213, "longitude": -104.9401725},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "4151
+        E County Line Rd", "address2": "Unit G", "address3": "", "city": "Centennial",
+        "zip_code": "80122", "country": "US", "state": "CO", "display_address": ["4151
+        E County Line Rd", "Unit G", "Centennial, CO 80122"]}, "phone": "+13037710590",
+        "display_phone": "(303) 771-0590", "distance": 7482.94662376722}, {"id": "B-i9sgxQjbmGaSNB36ijUA",
+        "alias": "coal-mine-ave-brewing-company-littleton", "name": "Coal Mine Ave
+        Brewing Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CobaapPS56mvQJSsfCCNrg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/coal-mine-ave-brewing-company-littleton?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 64, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.5961, "longitude": -105.10598},
+        "transactions": [], "price": "$", "location": {"address1": "9719 W Coal Mine
+        Ave", "address2": "Unit A", "address3": null, "city": "Littleton", "zip_code":
+        "80123", "country": "US", "state": "CO", "display_address": ["9719 W Coal
+        Mine Ave", "Unit A", "Littleton, CO 80123"]}, "phone": "+17205044866", "display_phone":
+        "(720) 504-4866", "distance": 7582.045377144893}, {"id": "SAB9DCn03FG5mVnD7KnfMQ",
+        "alias": "halfpenny-brewing-centennial-2", "name": "Halfpenny Brewing", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/9NVVKrOMxcPC9Jd-N40RjA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/halfpenny-brewing-centennial-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 98, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "venues", "title": "Venues & Event Spaces"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.593547, "longitude": -104.927141}, "transactions": [], "price":
+        "$", "location": {"address1": "5150 E Arapahoe Rd", "address2": "Unit D1-B",
+        "address3": "", "city": "Centennial", "zip_code": "80122", "country": "US",
+        "state": "CO", "display_address": ["5150 E Arapahoe Rd", "Unit D1-B", "Centennial,
+        CO 80122"]}, "phone": "+17205830580", "display_phone": "(720) 583-0580", "distance":
+        7817.095462141399}, {"id": "6u_31XVcHTQeJmRTKc_W1g", "alias": "landlocked-ales-lakewood",
+        "name": "Landlocked Ales", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/5j_sj6PWYSjPRt9Y-44Pbw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/landlocked-ales-lakewood?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 50, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.65778781623806, "longitude":
+        -105.08341781165673}, "transactions": [], "price": "$$", "location": {"address1":
+        "3225 S Wadsworth Blvd", "address2": "Ste S", "address3": null, "city": "Lakewood",
+        "zip_code": "80227", "country": "US", "state": "CO", "display_address": ["3225
+        S Wadsworth Blvd", "Ste S", "Lakewood, CO 80227"]}, "phone": "+13032848748",
+        "display_phone": "(303) 284-8748", "distance": 8835.218261019902}, {"id":
+        "JCny24U3UiucGDlNm7xL2A", "alias": "blue-spruce-brewing-littleton-littleton",
+        "name": "Blue Spruce Brewing - Littleton", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DpT4KpBrKCFkDDOIBq_R_Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blue-spruce-brewing-littleton-littleton?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 53, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.5679357111889, "longitude":
+        -105.117505006492}, "transactions": ["pickup"], "price": "$", "location":
+        {"address1": "10577 W Centennial Rd", "address2": "Unit A", "address3": null,
+        "city": "Littleton", "zip_code": "80127", "country": "US", "state": "CO",
+        "display_address": ["10577 W Centennial Rd", "Unit A", "Littleton, CO 80127"]},
+        "phone": "+17202823675", "display_phone": "(720) 282-3675", "distance": 9061.472866196691},
+        {"id": "TjD7j95PgCYSdKDHq8DsAA", "alias": "denver-beer-co-south-downing-denver-5",
+        "name": "Denver Beer Co South Downing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6kQSTkIForMhW_Ffq4IC-g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/denver-beer-co-south-downing-denver-5?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 42, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "newamerican", "title": "American (New)"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.67249, "longitude": -104.97373}, "transactions": [], "location":
+        {"address1": "2425 S Downing St", "address2": "", "address3": null, "city":
+        "Denver", "zip_code": "80210", "country": "US", "state": "CO", "display_address":
+        ["2425 S Downing St", "Denver, CO 80210"]}, "phone": "+13034332739", "display_phone":
+        "(303) 433-2739", "distance": 9330.315329305477}, {"id": "4OZsFy5_nPoXe524xN2IEA",
+        "alias": "3-freaks-brewery-highlands-ranch-3", "name": "3 Freaks Brewery",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Pn9v3dyMU5Ce08U4KPqKzg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/3-freaks-brewery-highlands-ranch-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 98, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.5659549, "longitude": -104.909255},
+        "transactions": [], "price": "$", "location": {"address1": "7140 E County
+        Line Rd", "address2": "", "address3": "", "city": "Highlands Ranch", "zip_code":
+        "80126", "country": "US", "state": "CO", "display_address": ["7140 E County
+        Line Rd", "Highlands Ranch, CO 80126"]}, "phone": "+17202990994", "display_phone":
+        "(720) 299-0994", "distance": 9931.045547947873}, {"id": "pNgtNy-spf2gqJSZebOj5w",
+        "alias": "platt-park-brewing-denver", "name": "Platt Park Brewing", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/0-ViCkoi2rv1Yw2t-Q3xSw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/platt-park-brewing-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 168, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6826108, "longitude": -104.98077544124214},
+        "transactions": [], "price": "$$", "location": {"address1": "1875 S Pearl
+        St", "address2": null, "address3": "", "city": "Denver", "zip_code": "80210",
+        "country": "US", "state": "CO", "display_address": ["1875 S Pearl St", "Denver,
+        CO 80210"]}, "phone": "+13039934002", "display_phone": "(303) 993-4002", "distance":
+        10136.625583881916}, {"id": "q6wZmA3F_pvk5G-hiFvEfA", "alias": "grandmas-house-denver-2",
+        "name": "Grandma''s House", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/mK-z4A3Jr_EouXP2PMr71w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/grandmas-house-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 214, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "venues", "title": "Venues & Event Spaces"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.6854629516602, "longitude": -104.987174987793}, "transactions":
+        [], "price": "$", "location": {"address1": "1710 S Broadway", "address2":
+        null, "address3": "", "city": "Denver", "zip_code": "80210", "country": "US",
+        "state": "CO", "display_address": ["1710 S Broadway", "Denver, CO 80210"]},
+        "phone": "+13035786754", "display_phone": "(303) 578-6754", "distance": 10280.57414279792},
+        {"id": "HIsE3334wYYU098HDPQsfg", "alias": "grange-food-hall-greenwood-village",
+        "name": "Grange Food Hall", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/9bheH6OAfDfARLr6D-oYew/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/grange-food-hall-greenwood-village?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 86, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias":
+        "breweries", "title": "Breweries"}], "rating": 4.0, "coordinates": {"latitude":
+        39.597317, "longitude": -104.895749}, "transactions": [], "price": "$$", "location":
+        {"address1": "6575 Greenwood Plaza Blvd", "address2": null, "address3": null,
+        "city": "Greenwood Village", "zip_code": "80111", "country": "US", "state":
+        "CO", "display_address": ["6575 Greenwood Plaza Blvd", "Greenwood Village,
+        CO 80111"]}, "phone": "+17207608247", "display_phone": "(720) 760-8247", "distance":
+        10500.13453662203}, {"id": "BaMVYWSs4r0PcWQFLCE4UA", "alias": "lariat-lodge-brewing-company-littleton-3",
+        "name": "Lariat Lodge Brewing Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HR7mscKFO7djLKCloI9p7w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lariat-lodge-brewing-company-littleton-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 117, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.57948, "longitude": -105.14039},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "12684
+        W Indore Pl", "address2": null, "address3": "", "city": "Littleton", "zip_code":
+        "80127", "country": "US", "state": "CO", "display_address": ["12684 W Indore
+        Pl", "Littleton, CO 80127"]}, "phone": "+13039790797", "display_phone": "(303)
+        979-0797", "distance": 10622.596846989663}, {"id": "6D80u-nziOANvO1KI_O_xg",
+        "alias": "dos-luces-brewery-denver", "name": "Dos Luces Brewery", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/tlQQDz9BOQDjSHBODfuW4A/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/dos-luces-brewery-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 65, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.69404, "longitude": -104.98706},
+        "transactions": [], "price": "$$", "location": {"address1": "1236 S Broadway",
+        "address2": "", "address3": null, "city": "Denver", "zip_code": "80210", "country":
+        "US", "state": "CO", "display_address": ["1236 S Broadway", "Denver, CO 80210"]},
+        "phone": "+17203797763", "display_phone": "(720) 379-7763", "distance": 11210.340647191897},
+        {"id": "bUgM1rCIieJihMW_-AhHlQ", "alias": "lone-tree-brewing-lone-tree", "name":
+        "Lone Tree Brewing", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/3c354-SQs_oDPtd8xvfz9Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lone-tree-brewing-lone-tree?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 202, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.5629781, "longitude": -104.894501},
+        "transactions": [], "price": "$$", "location": {"address1": "8200 Park Meadows
+        Dr", "address2": "Ste 8222", "address3": "", "city": "Lone Tree", "zip_code":
+        "80124", "country": "US", "state": "CO", "display_address": ["8200 Park Meadows
+        Dr", "Ste 8222", "Lone Tree, CO 80124"]}, "phone": "+13037925822", "display_phone":
+        "(303) 792-5822", "distance": 11233.732491929775}, {"id": "g7wvVCNPwGSS9shG7tFoaw",
+        "alias": "spice-trade-brewery-and-kitchen-greenwood-village-4", "name": "Spice
+        Trade Brewery & Kitchen", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qAVoUypQHGTB4eaqJGxe-w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/spice-trade-brewery-and-kitchen-greenwood-village-4?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 184, "categories": [{"alias": "brewpubs", "title": "Brewpubs"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6101509383376, "longitude":
+        -104.886284971773}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "8775 E Orchard Rd", "address2": "Unit 811", "address3": null,
+        "city": "Greenwood Village", "zip_code": "80111", "country": "US", "state":
+        "CO", "display_address": ["8775 E Orchard Rd", "Unit 811", "Greenwood Village,
+        CO 80111"]}, "phone": "+17207109508", "display_phone": "(720) 710-9508", "distance":
+        11417.629378047219}, {"id": "55E-o4xYzfAxcSCdT73Rmg", "alias": "resolute-brewing-centennial",
+        "name": "Resolute Brewing", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/kpqZnyYaapUFqPY2pjQOZg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/resolute-brewing-centennial?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 173, "categories": [{"alias": "beergardens", "title": "Beer
+        Gardens"}, {"alias": "breweries", "title": "Breweries"}, {"alias": "beerbar",
+        "title": "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude": 39.58476,
+        "longitude": -104.88495}, "transactions": [], "price": "$$", "location": {"address1":
+        "7286 S Yosemite St", "address2": "Ste 110", "address3": "", "city": "Centennial",
+        "zip_code": "80112", "country": "US", "state": "CO", "display_address": ["7286
+        S Yosemite St", "Ste 110", "Centennial, CO 80112"]}, "phone": "+17207221238",
+        "display_phone": "(720) 722-1238", "distance": 11509.938386439131}, {"id":
+        "EAFq88erETEVwbBPrJupag", "alias": "chain-reaction-brewing-company-denver",
+        "name": "Chain Reaction Brewing Company", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/A3BYraEzVkhO-CBSVtluYA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chain-reaction-brewing-company-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 87, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6995433, "longitude": -105.001399903867},
+        "transactions": [], "price": "$", "location": {"address1": "902 S Lipan St",
+        "address2": "", "address3": "", "city": "Denver", "zip_code": "80223", "country":
+        "US", "state": "CO", "display_address": ["902 S Lipan St", "Denver, CO 80223"]},
+        "phone": "+13039220960", "display_phone": "(303) 922-0960", "distance": 11587.199879541156},
+        {"id": "8ebfOUxqQwVTgv_IB60PDg", "alias": "green-mountain-beer-company-lakewood-3",
+        "name": "Green Mountain Beer Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PFcNkXWCQZbgybW9DtN5BA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/green-mountain-beer-company-lakewood-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 136, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "foodtrucks", "title": "Food Trucks"}, {"alias": "beerbar", "title":
+        "Beer Bar"}], "rating": 4.5, "coordinates": {"latitude": 39.6702851948555,
+        "longitude": -105.114235793242}, "transactions": [], "price": "$$", "location":
+        {"address1": "2585 S Lewis Way", "address2": "Ste 110", "address3": null,
+        "city": "Lakewood", "zip_code": "80227", "country": "US", "state": "CO", "display_address":
+        ["2585 S Lewis Way", "Ste 110", "Lakewood, CO 80227"]}, "phone": "+13039860201",
+        "display_phone": "(303) 986-0201", "distance": 11637.359122235881}, {"id":
+        "85bAYo8DlQzSTIg5EMEddw", "alias": "peak-view-brewing-greenwood-village",
+        "name": "Peak View Brewing", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/9UPgHvtqkJq92BtYRrERzw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/peak-view-brewing-greenwood-village?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 99, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "beerbar", "title": "Beer Bar"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.59443, "longitude": -104.87683}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "9672 E Arapahoe Rd", "address2":
+        "", "address3": null, "city": "Greenwood Village", "zip_code": "80112", "country":
+        "US", "state": "CO", "display_address": ["9672 E Arapahoe Rd", "Greenwood
+        Village, CO 80112"]}, "phone": "+13033534309", "display_phone": "(303) 353-4309",
+        "distance": 12111.660241584024}, {"id": "ljUUALr2IGIaGhPTMCy8SQ", "alias":
+        "old-121-brewhouse-lakewood-2", "name": "Old 121 Brewhouse", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/2RdwzSdS2j7Rr3xbNE_Qnw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/old-121-brewhouse-lakewood-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 19, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.698134, "longitude": -105.082397},
+        "transactions": [], "location": {"address1": "1057 S Wadsworth Blvd", "address2":
+        "Ste 60", "address3": "", "city": "Lakewood", "zip_code": "80226", "country":
+        "US", "state": "CO", "display_address": ["1057 S Wadsworth Blvd", "Ste 60",
+        "Lakewood, CO 80226"]}, "phone": "+13039860311", "display_phone": "(303) 986-0311",
+        "distance": 12597.440261027725}, {"id": "AXGGtIeyKRRfUlZ3SYgu6A", "alias":
+        "colorado-brewery-bus-denver", "name": "Colorado Brewery Bus", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/R06PqUVK8_wRk07pFsIHRw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/colorado-brewery-bus-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 45, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "tours", "title": "Tours"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7089865, "longitude": -104.9923935}, "transactions": [], "price": "$$",
+        "location": {"address1": "420 S Cherokee St", "address2": null, "address3":
+        "", "city": "Denver", "zip_code": "80209", "country": "US", "state": "CO",
+        "display_address": ["420 S Cherokee St", "Denver, CO 80209"]}, "phone": "+17204433635",
+        "display_phone": "(720) 443-3635", "distance": 12741.107679469751}, {"id":
+        "R8cRvrW24WOYROICkOPCDA", "alias": "great-frontier-brewing-company-lakewood",
+        "name": "Great Frontier Brewing Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DK0Y9xQVQbNaZZHQNP_HOA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/great-frontier-brewing-company-lakewood?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 53, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.6815298778573, "longitude":
+        -105.117722457672}, "transactions": [], "price": "$", "location": {"address1":
+        "2010 S Oak St", "address2": "", "address3": "", "city": "Lakewood", "zip_code":
+        "80227", "country": "US", "state": "CO", "display_address": ["2010 S Oak St",
+        "Lakewood, CO 80227"]}, "phone": "+17203281758", "display_phone": "(720) 328-1758",
+        "distance": 12750.990403092144}, {"id": "KbGU3pTS6Lc87t8X6WD6Ng", "alias":
+        "rock-bottom-centennial", "name": "ROCK BOTTOM", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/GrQO848XwVLPhG-lvoDdUg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rock-bottom-centennial?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 304, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 3.0,
+        "coordinates": {"latitude": 39.56780034, "longitude": -104.87397}, "transactions":
+        ["pickup", "delivery"], "price": "$$", "location": {"address1": "9627 E County
+        Line Rd", "address2": "", "address3": "", "city": "Centennial", "zip_code":
+        "80112", "country": "US", "state": "CO", "display_address": ["9627 E County
+        Line Rd", "Centennial, CO 80112"]}, "phone": "+13037929090", "display_phone":
+        "(303) 792-9090", "distance": 12765.343639511722}, {"id": "fqXs4XHNU-4NjdYNHZAhew",
+        "alias": "rare-by-grist-lone-tree", "name": "Rare by Grist", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/XkoK8MmMG-NVUqVVmttabQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/rare-by-grist-lone-tree?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 86, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.554728, "longitude": -104.878893},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "9535
+        Park Meadows Dr", "address2": "Unit F", "address3": null, "city": "Lone Tree",
+        "zip_code": "80124", "country": "US", "state": "CO", "display_address": ["9535
+        Park Meadows Dr", "Unit F", "Lone Tree, CO 80124"]}, "phone": "+13037289394",
+        "display_phone": "(303) 728-9394", "distance": 12806.234725673303}, {"id":
+        "iejIp0HE3jlo6G90Hc2bsA", "alias": "comrade-brewing-denver", "name": "Comrade
+        Brewing", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dlqu6IT_D0KNsIlK4YLEYw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/comrade-brewing-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 216, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.67571385429129, "longitude":
+        -104.89841774110447}, "transactions": [], "price": "$$", "location": {"address1":
+        "7667 E Iliff Ave", "address2": "Ste F", "address3": "", "city": "Denver",
+        "zip_code": "80231", "country": "US", "state": "CO", "display_address": ["7667
+        E Iliff Ave", "Ste F", "Denver, CO 80231"]}, "phone": "+17207480700", "display_phone":
+        "(720) 748-0700", "distance": 13552.469298060103}, {"id": "e-UQTdRwL6n9PvQ6Ga3HCg",
+        "alias": "colorado-cider-denver-2", "name": "Colorado Cider", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/N6-iRw2LT3Ob2SPOfD6kdw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/colorado-cider-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 102, "categories": [{"alias": "beer_and_wine", "title": "Beer,
+        Wine & Spirits"}, {"alias": "breweries", "title": "Breweries"}], "rating":
+        4.5, "coordinates": {"latitude": 39.71905, "longitude": -105.019562}, "transactions":
+        [], "price": "$", "location": {"address1": "2650 W 2nd Ave", "address2": "Ste
+        10", "address3": "", "city": "Denver", "zip_code": "80219", "country": "US",
+        "state": "CO", "display_address": ["2650 W 2nd Ave", "Ste 10", "Denver, CO
+        80219"]}, "phone": "+13037593560", "display_phone": "(303) 759-3560", "distance":
+        13665.85107042827}, {"id": "n8VkF0TDShRd3tgpAlPS4g", "alias": "novel-strand-brewing-company-denver",
+        "name": "Novel Strand Brewing Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4gN6llbxGPVRLjsbawJepQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/novel-strand-brewing-company-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 45, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.71855, "longitude": -104.99237},
+        "transactions": [], "price": "$$", "location": {"address1": "305 W 1st Ave",
+        "address2": null, "address3": "", "city": "Denver", "zip_code": "80223", "country":
+        "US", "state": "CO", "display_address": ["305 W 1st Ave", "Denver, CO 80223"]},
+        "phone": "+17209490246", "display_phone": "(720) 949-0246", "distance": 13791.366225386015},
+        {"id": "IqC4v53GgZce6TbLqyFa7Q", "alias": "bull-and-bush-denver-3", "name":
+        "Bull & Bush", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/xE6Y-pWWkRJYUOnQSrmPdA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bull-and-bush-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 888, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "breweries", "title": "Breweries"}, {"alias": "pubs",
+        "title": "Pubs"}], "rating": 4.0, "coordinates": {"latitude": 39.70305732464881,
+        "longitude": -104.93255978008663}, "transactions": ["pickup"], "price": "$$",
+        "location": {"address1": "4700 Cherry Creek Dr S", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80246", "country": "US", "state": "CO",
+        "display_address": ["4700 Cherry Creek Dr S", "Denver, CO 80246"]}, "phone":
+        "+13037590333", "display_phone": "(303) 759-0333", "distance": 13971.506996003009},
+        {"id": "wWJkM-QUdIsgLV-pp_bYDQ", "alias": "trve-brewing-denver-3", "name":
+        "TRVE Brewing", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5JYXbtSFsI3XqZJYCFPK5A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/trve-brewing-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 269, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "bars", "title": "Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        39.719934452661974, "longitude": -104.98768265016403}, "transactions": [],
+        "price": "$$", "location": {"address1": "227 Broadway", "address2": "Ste 101",
+        "address3": "", "city": "Denver", "zip_code": "80203", "country": "US", "state":
+        "CO", "display_address": ["227 Broadway", "Ste 101", "Denver, CO 80203"]},
+        "phone": "+13033511021", "display_phone": "(303) 351-1021", "distance": 14011.280049876583},
+        {"id": "QBjCIo_XimiuwHfGT9ZKzA", "alias": "baere-brewing-company-denver",
+        "name": "Baere Brewing Company", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/tsxuor1TD3JfdKpDMpaX3Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/baere-brewing-company-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 131, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.721382361761, "longitude": -104.987187206748},
+        "transactions": [], "price": "$", "location": {"address1": "320 Broadway",
+        "address2": "Unit E", "address3": "", "city": "Denver", "zip_code": "80203",
+        "country": "US", "state": "CO", "display_address": ["320 Broadway", "Unit
+        E", "Denver, CO 80203"]}, "phone": "+13037333354", "display_phone": "(303)
+        733-3354", "distance": 14177.372053660594}, {"id": "qbzdUulgPIrqfgGFM22KxQ",
+        "alias": "black-sky-brewery-denver", "name": "Black Sky Brewery", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/B4ZLFrNBMO8KR_t0BuWVpg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/black-sky-brewery-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 207, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 4.0, "coordinates": {"latitude":
+        39.723938, "longitude": -104.998298}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "490 Santa Fe Dr", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80204", "country": "US", "state":
+        "CO", "display_address": ["490 Santa Fe Dr", "Denver, CO 80204"]}, "phone":
+        "+17207085816", "display_phone": "(720) 708-5816", "distance": 14311.851907014156},
+        {"id": "CfpzyrxFhwPILsuDXj997g", "alias": "banded-oak-brewing-company-denver",
+        "name": "Banded Oak Brewing Company", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/m9WIAaQWI_zHbQaSfC6Bsg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/banded-oak-brewing-company-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 75, "categories": [{"alias": "breweries", "title": "Breweries"},
+        {"alias": "beerbar", "title": "Beer Bar"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.72377, "longitude": -104.9871}, "transactions": [], "price":
+        "$", "location": {"address1": "470 Broadway", "address2": "", "address3":
+        null, "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["470 Broadway", "Denver, CO 80203"]}, "phone": "+17204798033",
+        "display_phone": "(720) 479-8033", "distance": 14438.060083117833}, {"id":
+        "pMFC9iSrthpcPEUU2TzUkA", "alias": "counter-culture-brewery-grille-denver-3",
+        "name": "Counter Culture Brewery + Grille", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/gyGaab7afijnm9h79rOZrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/counter-culture-brewery-grille-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 69, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "brewpubs", "title": "Brewpubs"}, {"alias": "sandwiches",
+        "title": "Sandwiches"}], "rating": 4.5, "coordinates": {"latitude": 39.72751,
+        "longitude": -104.984681}, "transactions": ["pickup"], "price": "$$", "location":
+        {"address1": "205 E 7th Ave", "address2": "", "address3": null, "city": "Denver",
+        "zip_code": "80203", "country": "US", "state": "CO", "display_address": ["205
+        E 7th Ave", "Denver, CO 80203"]}, "phone": "+17206388786", "display_phone":
+        "(720) 638-8786", "distance": 14887.116728870642}, {"id": "uxFCD0lG2_YKO6naSrf7SA",
+        "alias": "renegade-brewing-company-denver", "name": "Renegade Brewing Company",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/x7ZqppDsGXjk24HL9yJBhA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/renegade-brewing-company-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 291, "categories": [{"alias": "breweries", "title": "Breweries"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7306171167901, "longitude":
+        -104.999325550926}, "transactions": [], "price": "$", "location": {"address1":
+        "925 West 9th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["925 West 9th
+        Ave", "Denver, CO 80204"]}, "phone": "", "display_phone": "", "distance":
+        15039.690251496679}], "total": 55, "region": {"center": {"longitude": -105.018310546875,
+        "latitude": 39.59615368888883}}}'
+  recorded_at: Wed, 07 Dec 2022 18:06:29 GMT
+recorded_with: VCR 6.1.0
