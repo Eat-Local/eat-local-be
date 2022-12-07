@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Mutations::CreateFavorite, type: :graphql do
@@ -39,7 +41,7 @@ RSpec.describe Mutations::CreateFavorite, type: :graphql do
     expect(result['data']['createFavorite']['favorite']).to have_key('id')
     expect(result['data']['createFavorite']['favorite']['title']).to eq('place')
     expect(result['data']['createFavorite']['favorite']['venueType']).to eq('brewery')
-    expect(result['data']['createFavorite']['favorite']['address']).to eq("123 Fake street, Denver, CO, 80205")
+    expect(result['data']['createFavorite']['favorite']['address']).to eq('123 Fake street, Denver, CO, 80205')
     expect(result['data']['createFavorite']['favorite']['rating']).to eq(2.2)
     expect(result['data']['createFavorite']['favorite']['url']).to eq('www.fake.com')
     expect(result['data']['createFavorite']['favorite']['image']).to eq('www.fakepic.com')

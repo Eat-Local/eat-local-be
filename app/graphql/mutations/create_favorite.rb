@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Mutations
   class CreateFavorite < Mutations::BaseMutation
     argument :title, String, required: true
@@ -14,10 +16,10 @@ module Mutations
     field :errors, [String], null: false
 
     def resolve(title:, venue_type:, address:, rating:, url:,
-      image:, is_closed:, phone:, user_id:)
+                image:, is_closed:, phone:, user_id:)
       user = User.find(user_id)
       favorite = user.favorites.new(title: title, venue_type: venue_type, address: address, rating: rating,
-        url: url, image: image, is_closed: is_closed, phone: phone, user_id: user.id)
+                                    url: url, image: image, is_closed: is_closed, phone: phone, user_id: user.id)
       if favorite.save
         {
           favorite: favorite,
