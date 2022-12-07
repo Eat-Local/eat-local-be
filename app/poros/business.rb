@@ -1,23 +1,29 @@
 # frozen_string_literal: true
 
 class Business
-  attr_reader :type,
-              :title,
-              :address,
+  attr_reader :title,
+              :id,
+              :venue_type,
+              :display_address,
               :rating,
               :site,
-              :img
+              :img,
+              :is_closed,
+              :price,
+              :display_phone,
+              :coordinates
 
   def initialize(data)
-    @type = data[:categories][0][:title]
+    @id = nil
     @title = data[:name]
-    # @description = ???
-    @address = data[:location]
+    @venue_type = data[:categories][0][:title]
+    @display_address = data[:location]
     @rating = data[:rating]
     @site = data[:url]
     @img = data[:image_url]
-    # @hours = data[:is_closed]???
-    # @phone = ???
-    # @wheelchair_accessible = exstension???
+    @is_closed = data[:is_closed]
+    @price = data[:price]
+    @display_phone = data[:display_phone]
+    @coordinates = data[:coordinates]
   end
 end
