@@ -51,6 +51,7 @@ RSpec.describe Mutations::CreateUser, type: :graphql do
           }
     GQL
     result = EatLocalBeSchema.execute(query)
+
     expect(result['data']['createUser']).to eq(nil)
     expect(result['errors'][0]['message']).to eq('Cannot return null for non-nullable field CreateUserPayload.user')
   end
