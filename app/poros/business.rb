@@ -14,7 +14,7 @@ class Business
               :coordinates
 
   def initialize(data)
-    @id = nil
+    @id = data[:id]
     @title = data[:name]
     @venue_type = data[:categories][0][:title]
     @display_address = data[:location]
