@@ -2,6 +2,7 @@
 
 class Business
   attr_reader :title,
+              :id,
               :venue_type,
               :display_address,
               :rating,
@@ -13,6 +14,7 @@ class Business
               :coordinates
 
   def initialize(data)
+    @id = nil
     @title = data[:name]
     @venue_type = data[:categories][0][:title]
     @display_address = data[:location]
