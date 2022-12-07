@@ -12,12 +12,16 @@ RSpec.describe Business, :vcr, type: :object do
 
     it 'should have correct attribute data types' do
       expect(object).to have_attributes({
-                                          address: Hash,
-                                          img: String,
+                                          venue_type: String,
+                                          title: String,
+                                          display_address: Hash,
                                           rating: Float,
                                           site: String,
-                                          title: String,
-                                          type: String
+                                          img: String,
+                                          is_closed: be_in([true, false]),
+                                          price: String,
+                                          display_phone: String,
+                                          coordinates: Hash
                                         })
     end
   end

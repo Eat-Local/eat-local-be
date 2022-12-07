@@ -8,6 +8,7 @@ class Business
               :site,
               :img,
               :is_closed,
+              :price,
               :display_phone,
               :coordinates
 
@@ -19,6 +20,7 @@ class Business
     @site = data[:url]
     @img = data[:image_url]
     @is_closed = data[:is_closed]
+    @price = data[:price]
     @display_phone = data[:display_phone]
     @coordinates = data[:coordinates]
   end
