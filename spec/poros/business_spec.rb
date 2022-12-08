@@ -14,6 +14,7 @@ RSpec.describe Business, :vcr, type: :object do
       expect(object).to have_attributes({
                                           venue_type: String,
                                           title: String,
+                                          alias: String,
                                           display_address: Hash,
                                           rating: Float,
                                           site: String,
