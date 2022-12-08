@@ -20,17 +20,11 @@ module Mutations
       user = User.find(user_id)
       favorite = user.favorites.new(title: title, venue_type: venue_type, address: address, rating: rating,
                                     url: url, image: image, is_closed: is_closed, phone: phone, user_id: user.id)
-      if favorite.save
-        {
-          favorite: favorite,
-          errors: []
-        }
-      else
-        {
-          user: nil,
-          errors: user.errors.full_messages
-        }
-      end
+      favorite.save
+      {
+        favorite: favorite,
+        errors: []
+      }
     end
   end
 end

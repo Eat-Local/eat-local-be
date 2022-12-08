@@ -13,6 +13,7 @@ RSpec.describe 'Query user', type: :graphql do
             lname
             email
             id
+            countFavorites
             favorites {
                 id
                 title
@@ -36,7 +37,7 @@ RSpec.describe 'Query user', type: :graphql do
     expect(result['data']['user']).to have_key('fname')
     expect(result['data']['user']).to have_key('lname')
     expect(result['data']['user']['email']).to eq('TimmyT@fakeemail.com')
-    expect(result['data']['user']['favorites'].count).to eq(10)
+    expect(result['data']['user']['countFavorites']).to eq(10)
     expect(result['data']['user']['favorites']).to be_an(Array)
     expect(result['data']['user']['favorites'][0]).to have_key('id')
     expect(result['data']['user']['favorites'][0]).to have_key('title')
@@ -58,6 +59,7 @@ RSpec.describe 'Query user', type: :graphql do
             lname
             email
             id
+            countFavorites
             favorites {
                 id
                 title
