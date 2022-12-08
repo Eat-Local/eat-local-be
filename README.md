@@ -44,7 +44,7 @@
  
 
 ### Built With
-<center>
+<div align="center">
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -60,7 +60,7 @@
 ![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 
-</center>
+</div>
 
 
 ### Getting Started
@@ -127,24 +127,22 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
  #### Database Schema
 
-<center>
+<div align="center">
   <img src="app/assets/images/schema.png" alt="Logo" width="500" height="300">
-</center>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---------
 
-<center>
-
-
+<div align="center">
 
 #### Gem Documentation
 
 <table>
   <tr>
     <td align="center"><a href="https://github.com/teamcapybara/capybara">Capybara</a></td>
-    <td align="center"><a href="(https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
+    <td align="center"><a href="https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
     <td align="center"><a href="https://github.com/faker-ruby/faker">faker</a></td>
   </tr>
   <tr>
@@ -174,10 +172,10 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 </table>
 
 
-</center>
+</div>
 
 ------
-<center>
+<div align="center">
 
 ## Contacts
 
@@ -206,7 +204,7 @@ Project Link: [Eat Local BE](https://github.com/Eat-Local/eat-local-be)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-</center>
+</div>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Eat-Local/eat-local-be.svg?style=for-the-badge
 [contributors-url]: https://github.com/Eat-Local/eat-local-be/graphs/contributors
