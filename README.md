@@ -128,8 +128,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
  #### Database Schema
 
 <center>
-  <img src="app/assets/images/schema.png" alt="Logo" width="500" height="300">
-</center>
+<img width="441" alt="Screen Shot 2022-12-02 at 7 38 59 PM (1)" src="https://user-images.githubusercontent.com/105956031/206585894-6148119b-369e-4f05-8e2e-5ad258c25b99.png">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +143,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 <table>
   <tr>
     <td align="center"><a href="https://github.com/teamcapybara/capybara">Capybara</a></td>
-    <td align="center"><a href="https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
+    <td align="center"><a href="(https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
     <td align="center"><a href="https://github.com/faker-ruby/faker">faker</a></td>
   </tr>
   <tr>
