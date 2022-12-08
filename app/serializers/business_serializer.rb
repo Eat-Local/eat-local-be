@@ -3,6 +3,7 @@
 class BusinessSerializer
   include JSONAPI::Serializer
   attributes :title,
+             :alias,
              :venue_type,
              :display_address,
              :rating,
