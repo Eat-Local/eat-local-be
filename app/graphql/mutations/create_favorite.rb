@@ -21,11 +21,10 @@ module Mutations
       favorite = user.favorites.new(title: title, venue_type: venue_type, address: address, rating: rating,
                                     url: url, image: image, is_closed: is_closed, phone: phone, user_id: user.id)
       favorite.save
-        {
-          favorite: favorite,
-          errors: []
-        }
-    
+      {
+        favorite: favorite,
+        errors: []
+      }
     end
   end
 end
