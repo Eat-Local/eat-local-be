@@ -24,6 +24,7 @@ RSpec.describe 'Businesses | Index', type: :request do
         expect(business[:attributes][:price]).to be_in(['$', '$$', '$$$', '$$$$', nil])
         expect(business[:attributes][:display_phone]).to be_an String
         expect(business[:attributes][:coordinates]).to be_an Hash
+        expect(business[:attributes][:alias]).to be_a String
       end
     end
   end
