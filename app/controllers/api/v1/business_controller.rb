@@ -3,7 +3,7 @@
 module Api
   module V1
     class BusinessController < ApplicationController
-      def index                                                              
+      def index
         render json: BusinessSerializer.new(YelpFacade.business_details(business_params[:location],
                                                                         business_params[:business]))
       end

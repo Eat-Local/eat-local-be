@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "Query user", type: :graphql do
+RSpec.describe 'Query user', type: :graphql do
   it 'queries a user by email' do
-    user = create(:user, email: "TimmyT@fakeemail.com")
+    user = create(:user, email: 'TimmyT@fakeemail.com')
     create_list(:favorite, 10, user_id: user.id)
     query = <<~GQL
       query getUsers {
@@ -46,7 +48,6 @@ RSpec.describe "Query user", type: :graphql do
     expect(result['data']['user']['favorites'][0]).to have_key('isClosed')
     expect(result['data']['user']['favorites'][0]).to have_key('phone')
     expect(result['data']['user']['favorites'][0]['userId']).to eq(user.id)
-
   end
 
   it 'throws an error when email does not exist' do
@@ -74,7 +75,7 @@ RSpec.describe "Query user", type: :graphql do
     GQL
 
     result = EatLocalBeSchema.execute(query)
-    
+
     expect(result['data']).to eq(nil)
     expect(result['errors'][0]['message']).to eq('Cannot return null for non-nullable field Query.user')
   end
