@@ -17,7 +17,10 @@
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
 SimpleCov.start 'rails'
-SimpleCov.add_filter %w[config channels jobs mailers]
+SimpleCov.add_filter %w[config channels jobs mailers app/graphql/eat_local_be_schema.rb app/controllers/graphql_controller.rb
+app/graphql/types/base_enum.rb app/graphql/types/base_interface.rb app/graphql/types/base_scalar.rb
+app/graphql/types/base_union.rb app/graphql/types/node_type.rb
+]
 require 'vcr'
 require 'webmock'
 
