@@ -1,10 +1,5 @@
 <a name="readme-top"></a>
 
-
-
-
-<center>
-
 <br />
 <div align="center">
   <a href="https://github.com/Eat-Local/eat-local-be">
@@ -46,11 +41,15 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+ 
 
 ### Built With
+<center>
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
+
 
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
@@ -61,19 +60,24 @@
 ![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 
+</center>
+
 
 ### Getting Started
+<br />
 
 #### Prerequistites
 
 The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
+
+#### Installation and setup
 1. Clone the repo
    ```sh
-   git clone
-   https://github.com/neb417/lunch_and_learn
+   git clone git@github.com:Eat-Local/eat-local-be.git
    ```
-1. Install gems
+
+1. Add gems
    In the main body:
    ```sh
    gem 'faraday'
@@ -99,7 +103,15 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
    gem 'vcr'
    gem 'webmock'
    ```
+
+1. Install Gems with `$bundle install`
+
+1. Migrate database with `$rails db:{create,migrate}`
+
+1. Seed development/test database with `$rails db:seed`
+
 1. Enter your API keys
+
    Run
    ```sh
    $ bundle exec figaro install
@@ -109,62 +121,67 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
    YELP_API_KEY: 'ENTER_YOUR_API'
    ```
 
-**Gem Documentation**
-<table align="center">
-  <td align="center">[Capybara](https://github.com/teamcapybara/capybara)</td>
-    
-  <td align="center">[factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)</td>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-  <td align="center">[faker](https://github.com/faker-ruby/faker)</td>
+--------
 
-  <td align="center">[faraday](https://lostisland.github.io/faraday/)</td>
+ #### Database Schema
 
-  <td align="center">[figaro](https://github.com/laserlemon/figaro)</td>
-
-  <td align="center">[graphiql](https://github.com/rmosolgo/graphiql-rails)</td>
-
-  <td align="center">[graphql](https://github.com/rmosolgo/graphql-ruby)</td>
-
-  <td align="center"> [jsonapi-serializer](https://github.com/jsonapi-serializer/jsonapi-serializer)</td>
-
-  <td align="center">[pry](https://github.com/pry/pry)</td>
-
-  <td align="center">[rack-cors](https://github.com/cyu/rack-cors)</td>
-
-  <td align="center">[rspec-rails](https://github.com/rspec/rspec-rails)</td>
-
-  <td align="center">[rubocop](https://github.com/rubocop/rubocop-rails)</td>
-
-  <td align="center">[rubocop-faker](https://github.com/koic/rubocop-faker)</td>
-
-  <td align="center">[shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)</td>
-
-  <td align="center">[simplecov](https://github.com/simplecov-ruby/simplecov)</td>
-
-  <td align="center">[vcr](https://github.com/vcr/vcr)</td>
-
-  <td align="center">[webmock](https://github.com/bblimke/webmock)</td>
-</table>
+<center>
+  <img src="app/assets/images/schema.png" alt="Logo" width="500" height="300">
+</center>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-###
-* System dependencies
 
-* Configuration
+---------
 
-### Database creation
+<center>
 
-Data base schema:
-<img src="app/assets/images/schema.png" alt="Logo" width="500" height="300">
 
-Run
 
-`rails db:{create,migrate}`
+#### Gem Documentation
 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/teamcapybara/capybara">Capybara</a></td>
+    <td align="center"><a href="(https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
+    <td align="center"><a href="https://github.com/faker-ruby/faker">faker</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://lostisland.github.io/faraday">faraday</a></td>
+    <td align="center"><a href="https://github.com/laserlemon/figaro">figaro</a></td>
+    <td align="center"><a href="https://github.com/rmosolgo/graphiql-rails">graphiql</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/rmosolgo/graphql-ruby">graphql</a></td>
+    <td align="center"><a href="https://github.com/jsonapi-serializer/jsonapi-serializer">jsonapi-serializer</a></td>
+    <td align="center"><a href="https://github.com/pry/pry">pry</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/cyu/rack-cors">rack-cors</a></td>
+    <td align="center"><a href="https://github.com/rspec/rspec-rails">rspec-rails</a></td>
+    <td align="center"><a href="https://github.com/rubocop/rubocop-rails">rubocop</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/koic/rubocop-faker">rubocop-faker</a></td>
+    <td align="center"><a href="https://github.com/thoughtbot/shoulda-matchers">shoulda-matchers</a></td>
+    <td align="center"><a href="https://github.com/simplecov-ruby/simplecov">simplecov</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/vcr/vcr">vcr</a></td>
+    <td align="center"><a href="https://github.com/bblimke/webmock">webmock</a></td>
+  </tr>
+</table>
+
+
+</center>
+
+------
+<center>
 
 ## Contacts
 
-Individual contributors :
+***Individual contributors:***
 
 <table align="center">
     <tr>
@@ -183,9 +200,17 @@ Individual contributors :
  width="150" height="auto" /></td>
 </table>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 Project Link: [Eat Local BE](https://github.com/Eat-Local/eat-local-be)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+</center>
+
+[contributors-shield]: https://img.shields.io/github/contributors/Eat-Local/eat-local-be.svg?style=for-the-badge
+[contributors-url]: https://github.com/Eat-Local/eat-local-be/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Eat-Local/eat-local-be.svg?style=for-the-badge
+[forks-url]: https://github.com/Eat-Local/eat-local-be/network/members
+[issues-shield]: https://img.shields.io/github/issues/Eat-Local/eat-local-be.svg?style=for-the-badge
+[issues-url]: https://github.com//Eat-Local/eat-local-be/issues
