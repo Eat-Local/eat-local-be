@@ -144,7 +144,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 <table>
   <tr>
     <td align="center"><a href="https://github.com/teamcapybara/capybara">Capybara</a></td>
-    <td align="center"><a href="(https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
+    <td align="center"><a href="https://github.com/thoughtbot/factory_bot_rails">factory_bot_rails</a></td>
     <td align="center"><a href="https://github.com/faker-ruby/faker">faker</a></td>
   </tr>
   <tr>
