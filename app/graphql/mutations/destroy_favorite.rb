@@ -3,11 +3,15 @@ module Mutations
     argument :id, Integer, required: true
 
 
-    field :favorite, Types::FavoriteType, null: false
+    field :favorite, Types::FavoriteType
+    field :errors, [String], null: false
 
 
     def resolve(id:)
-      Favorite.find(:id).destroy
+      Favorite.find(id).destroy
+      {
+        errors: []
+      }
     end
   end
 end
