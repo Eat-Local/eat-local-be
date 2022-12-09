@@ -44,7 +44,7 @@
  
 
 ### Built With
-<center>
+<div align="center">
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -60,7 +60,7 @@
 ![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 
-</center>
+</div>
 
 
 ### Getting Started
@@ -127,16 +127,17 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
  #### Database Schema
 
-<center>
-<img width="441" alt="Screen Shot 2022-12-02 at 7 38 59 PM (1)" src="https://user-images.githubusercontent.com/105956031/206585894-6148119b-369e-4f05-8e2e-5ad258c25b99.png">
+
+<div align="center">
+  <img width="441" alt="Screen Shot 2022-12-02 at 7 38 59 PM (1)" src="https://user-images.githubusercontent.com/105956031/206585894-6148119b-369e-4f05-8e2e-5ad258c25b99.png">
+</div>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---------
 
-<center>
-
-
+<div align="center">
 
 #### Gem Documentation
 
@@ -173,10 +174,11 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 </table>
 
 
-</center>
+</div>
 
 ------
-<center>
+
+<div align="center">
 
 ## Contacts
 
@@ -205,7 +207,7 @@ Project Link: [Eat Local BE](https://github.com/Eat-Local/eat-local-be)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-</center>
+</div>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Eat-Local/eat-local-be.svg?style=for-the-badge
 [contributors-url]: https://github.com/Eat-Local/eat-local-be/graphs/contributors
