@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Mutations::DestroyFavorite, type: :graphql do
@@ -33,6 +35,5 @@ RSpec.describe Mutations::DestroyFavorite, type: :graphql do
     expect(user.favorites.count).to eq(5)
     expect(result['data']['destroyFavorite']['favorite']).to eq(nil)
     expect(result['data']['destroyFavorite']['errors']).to eq([])
-    
   end
 end
