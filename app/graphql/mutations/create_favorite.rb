@@ -8,7 +8,7 @@ module Mutations
     argument :rating, String, required: true
     argument :url, String, required: true
     argument :image, String, required: true
-    argument :is_closed, String, required: true
+    argument :is_closed, String
     argument :phone, String, required: true
     argument :user_id, String, required: true
 
