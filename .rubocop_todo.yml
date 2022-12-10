@@ -33,3 +33,6 @@ Metrics/ParameterLists:
 
 Metrics/AbcSize:
   Enabled: false
+
+Layout/LineLength:
+  Enabled: false

@@ -14,7 +14,6 @@ RSpec.describe Favorite, type: :model do
     expect(favorite.rating).to be_a Float
     expect(favorite.url).to be_a String
     expect(favorite.image).to be_a String
-    expect(favorite.is_closed).to be_a String
     expect(favorite.phone).to be_a String
   end
 end

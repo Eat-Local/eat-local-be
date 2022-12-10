@@ -14,23 +14,26 @@ RSpec.describe Mutations::CreateFavorite, type: :graphql do
             rating: "2.2",
             url: "www.fake.com",
             image: "www.fakepic.com",
-            isClosed: "true",
             phone: "(303) 123-4567",
             userId: "1"
           }) {
-           favorite {
-             id,
-             title,
-             venueType,
-             address,
-             rating,
-             url,
-             image,
-             isClosed,
-             phone,
-             userId
-
-           }
+            user {
+              id,
+              email,
+              fname,
+              lname
+              favorites {
+                id,
+                title,
+                venueType,
+                address,
+                rating,
+                url,
+                image,
+                phone,
+                userId
+              }
+            }
            errors
           }
           }
@@ -38,16 +41,26 @@ RSpec.describe Mutations::CreateFavorite, type: :graphql do
 
     result = EatLocalBeSchema.execute(query)
 
-    expect(result['data']['createFavorite']['favorite']).to have_key('id')
-    expect(result['data']['createFavorite']['favorite']['title']).to eq('place')
-    expect(result['data']['createFavorite']['favorite']['venueType']).to eq('brewery')
-    expect(result['data']['createFavorite']['favorite']['address']).to eq('123 Fake street, Denver, CO, 80205')
-    expect(result['data']['createFavorite']['favorite']['rating']).to eq(2.2)
-    expect(result['data']['createFavorite']['favorite']['url']).to eq('www.fake.com')
-    expect(result['data']['createFavorite']['favorite']['image']).to eq('www.fakepic.com')
-    expect(result['data']['createFavorite']['favorite']['isClosed']).to eq('true')
-    expect(result['data']['createFavorite']['favorite']['phone']).to eq('(303) 123-4567')
-    expect(result['data']['createFavorite']['favorite']['userId']).to eq(1)
+    # expect(result['data']['createFavorite']['favorite']).to have_key('id')
+    # expect(result['data']['createFavorite']['favorite']['title']).to eq('place')
+    # expect(result['data']['createFavorite']['favorite']['venueType']).to eq('brewery')
+    # expect(result['data']['createFavorite']['favorite']['address']).to eq('123 Fake street, Denver, CO, 80205')
+    # expect(result['data']['createFavorite']['favorite']['rating']).to eq(2.2)
+    # expect(result['data']['createFavorite']['favorite']['url']).to eq('www.fake.com')
+    # expect(result['data']['createFavorite']['favorite']['image']).to eq('www.fakepic.com')
+    # expect(result['data']['createFavorite']['favorite']['phone']).to eq('(303) 123-4567')
+    # expect(result['data']['createFavorite']['favorite']['userId']).to eq(1)
+    # expect(result['data']['createFavorite']['errors']).to eq([])
+
+    expect(result['data']['createFavorite']['user']).to have_key('id')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['title']).to eq('place')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['venueType']).to eq('brewery')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['address']).to eq('123 Fake street, Denver, CO, 80205')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['rating']).to eq(2.2)
+    expect(result['data']['createFavorite']['user']['favorites'][0]['url']).to eq('www.fake.com')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['image']).to eq('www.fakepic.com')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['phone']).to eq('(303) 123-4567')
+    expect(result['data']['createFavorite']['user']['favorites'][0]['userId']).to eq(1)
     expect(result['data']['createFavorite']['errors']).to eq([])
   end
 end
