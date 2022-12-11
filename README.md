@@ -137,6 +137,95 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
 ---------
 
+
+
+## Endpoints
+
+* GET a user by email
+  ```
+  query getUsers {
+  user(email: "email"){
+          fname
+          lname
+          email
+          favorites {
+              title
+          }
+      }
+  }
+  ```
+
+* CREATE a user
+
+  ```
+  mutation {
+    createUser(input: {
+    email: "freddyf@fakeemail.com",
+      fname: "Fred",
+      lname: "Fredson"
+    }) {
+      user {
+        id,
+        email,
+        fname,
+        lname
+      }
+      errors
+    }
+  }
+  ```
+
+* CREATE a favorite for a user
+
+  ```
+  mutation {
+   createFavorite(input: {
+      title: "place",
+      venueType: "brewery",
+      address: "123 Fake street, Denver, CO, 80205"
+      rating: "2.2",
+      url: "www.fake.com",
+      image: "www.fakepic.com",
+      isClosed: "true",
+      phone: "(303) 123-4567",
+      userId: "4"
+    }) 
+      {
+      favorite {
+        id,
+        title,
+        venueType,
+        address,
+        rating,
+        url,
+        image,
+        isClosed,
+        phone,
+        userId
+        }
+    errors
+      }
+    }
+  ```
+
+* DESTROY a user favorite
+
+  ```
+    mutation {
+  destroyFavorite(input: {
+              id: 31
+            }) {
+            favorite {
+              id,
+
+            }
+            errors
+          }
+        }
+    ```
+
+---------
+
 <div align="center">
 
 #### Gem Documentation
