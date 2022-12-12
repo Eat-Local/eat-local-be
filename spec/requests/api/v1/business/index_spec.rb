@@ -21,7 +21,8 @@ RSpec.describe 'Businesses | Index', type: :request do
         expect(business[:attributes][:site]).to be_an String
         expect(business[:attributes][:img]).to be_an String
         expect(business[:attributes][:is_closed]).to be_in([true, false])
-        expect(business[:attributes][:price]).to be_in(["Bargain-basement", "Sir, this is a Wendy's", "It may cost you an arm and a leg", "Worth a King's ransom", nil])
+        expect(business[:attributes][:price]).to be_in(['Bargain-basement', "Sir, this is a Wendy's",
+                                                        'It may cost you an arm and a leg', "Worth a King's ransom", nil])
         expect(business[:attributes][:display_phone]).to be_an String
         expect(business[:attributes][:coordinates]).to be_an Hash
         expect(business[:attributes][:alias]).to be_a String
@@ -46,7 +47,8 @@ RSpec.describe 'Businesses | Index', type: :request do
       expect(business[:attributes][:site]).to be_an String
       expect(business[:attributes][:img]).to be_an String
       expect(business[:attributes][:is_closed]).to be_in([true, false])
-      expect(business[:attributes][:price]).to be_in(["Bargain-basement", "Sir, this is a Wendy's", "It may cost you an arm and a leg", "Worth a King's ransom", nil])
+      expect(business[:attributes][:price]).to be_in(['Bargain-basement', "Sir, this is a Wendy's",
+                                                      'It may cost you an arm and a leg', "Worth a King's ransom", nil])
       expect(business[:attributes][:display_phone]).to be_an String
       expect(business[:attributes][:coordinates]).to be_an Hash
       expect(business[:attributes][:alias]).to be_a String

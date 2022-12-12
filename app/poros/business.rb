@@ -29,17 +29,16 @@ class Business
     @coordinates = data[:coordinates]
   end
 
-
   private
 
   def price_conversion(data)
     case data
     when '$'
-      "Bargain-basement"
+      'Bargain-basement'
     when '$$'
       "Sir, this is a Wendy's"
     when '$$$'
       "Worth a King's ransom"
     end
-  end 
+  end
 end
