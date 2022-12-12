@@ -1,0 +1,495 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=40&location=Denver,%20CO&radius=16100&sort_by=distance&term=locally%20owned%20The%20Capital%20Grille
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer qJbWMO0dR5e1R2Ct-5hhhGqu1zFIWijMFZNdbEMyltQLfH79viaTuTi_NT80xYMNyfAEJkjobK889xM9F0lYQUie7kOW-g6qN1awpPj_v8xacW-ZA4PlFEhP4rOPY3Yx
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4243'
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--uswest2-69cb4c47f7-5ktxz; site=public_api_v3
+      X-Zipkin-Id:
+      - a61a4f9c74c038c2
+      Ratelimit-Resettime:
+      - '2022-12-13T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-131-202-uswest2bprod
+      X-Extlb:
+      - 10-69-131-202-uswest2bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 12 Dec 2022 20:53:14 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8254-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "uOgwMiqcxqkHl8z4mkFPkQ", "alias": "hudson-hill-denver",
+        "name": "Hudson Hill", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/u8FEWUEcS9vOTvwQ1Tp5xg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hudson-hill-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 315, "categories": [{"alias": "cocktailbars", "title": "Cocktail
+        Bars"}, {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "coffee",
+        "title": "Coffee & Tea"}], "rating": 4.5, "coordinates": {"latitude": 39.736981988785004,
+        "longitude": -104.97936455418487}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "619 E 13th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["619 E 13th Ave", "Denver, CO 80203"]}, "phone": "+13038320776",
+        "display_phone": "(303) 832-0776", "distance": 796.4365566553815}, {"id":
+        "STjNbLa0mLMSGp7w5PHjXQ", "alias": "humboldt-kitchen-bar-denver", "name":
+        "Humboldt Kitchen + Bar", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Jyjeu2EWJ7iHUvg-PSR3Ww/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/humboldt-kitchen-bar-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 817, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "seafood", "title": "Seafood"}, {"alias": "beer_and_wine",
+        "title": "Beer, Wine & Spirits"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7434886712108, "longitude": -104.969402299734}, "transactions": ["delivery",
+        "pickup"], "price": "$$$", "location": {"address1": "1700 Humboldt St", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80218", "country": "US",
+        "state": "CO", "display_address": ["1700 Humboldt St", "Denver, CO 80218"]},
+        "phone": "+13038131700", "display_phone": "(303) 813-1700", "distance": 888.5353597668052},
+        {"id": "ydbPYReX0IrY1D41fLB3pA", "alias": "table-6-denver", "name": "Table
+        6", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8OSSe7ZzIueKtcEnIY2eA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/table-6-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 498, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.7258, "longitude": -104.97428}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "609 Corona St", "address2": null,
+        "address3": "", "city": "Denver", "zip_code": "80218", "country": "US", "state":
+        "CO", "display_address": ["609 Corona St", "Denver, CO 80218"]}, "phone":
+        "+13038318800", "display_phone": "(303) 831-8800", "distance": 1132.5568514465483},
+        {"id": "i8VF3q7dTszCcigJSMcJzQ", "alias": "angelo-s-taverna-denver", "name":
+        "Angelo\u2019s Taverna", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/5mZqdS9LJatQR0JgqYfnwQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angelo-s-taverna-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1477, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.725523, "longitude": -104.979224},
+        "transactions": ["restaurant_reservation", "delivery", "pickup"], "price":
+        "$$", "location": {"address1": "620 E 6th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["620 E 6th Ave", "Denver, CO 80203"]}, "phone": "+13037443366",
+        "display_phone": "(303) 744-3366", "distance": 1351.3929919123793}, {"id":
+        "jVOAZe9L3Kwx9Ze-UhT3_w", "alias": "odyssey-italian-restaurant-denver", "name":
+        "Odyssey Italian Restaurant", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/X5Mh_wJK5CVcEvLeF8UsRQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/odyssey-italian-restaurant-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1185, "categories": [{"alias": "sicilian", "title": "Sicilian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "pastashops", "title":
+        "Pasta Shops"}], "rating": 4.5, "coordinates": {"latitude": 39.7257806690032,
+        "longitude": -104.979706093254}, "transactions": ["delivery", "pickup"], "price":
+        "$$", "location": {"address1": "603 E 6th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["603 E 6th Ave", "Denver, CO 80203"]}, "phone": "+13033180102",
+        "display_phone": "(303) 318-0102", "distance": 1352.1700039997434}, {"id":
+        "A5_tuFXYDz7V_a0_7CbjfA", "alias": "luca-denver-2", "name": "Luca", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/veszphCDiuekT1ltDa0UcQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/luca-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 305, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.72754, "longitude": -104.98378}, "transactions": ["delivery"],
+        "price": "$$$", "location": {"address1": "711 Grant St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["711 Grant St", "Denver, CO 80203"]}, "phone": "+13038326600",
+        "display_phone": "(303) 832-6600", "distance": 1461.649610565509}, {"id":
+        "EnG68SKKmVENncKzo2bMOg", "alias": "the-9th-door-capitol-hill-denver-3", "name":
+        "The 9th Door Capitol Hill", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zLciFOQAfjkvSI_MiRkWcA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-9th-door-capitol-hill-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 275, "categories": [{"alias": "spanish", "title": "Spanish"},
+        {"alias": "tapas", "title": "Tapas Bars"}, {"alias": "wine_bars", "title":
+        "Wine Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.731247, "longitude":
+        -104.986621}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "925 Lincoln St", "address2": "Ste C", "address3": "", "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["925 Lincoln
+        St", "Ste C", "Denver, CO 80203"]}, "phone": "+13038327027", "display_phone":
+        "(303) 832-7027", "distance": 1478.8743654488812}, {"id": "YS5GPu4yesMj6m3jiPSwSQ",
+        "alias": "barolo-grill-denver", "name": "Barolo Grill", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/PMCtg15NJ9sS7Vt_dCWgzQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/barolo-grill-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 371, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.72546, "longitude": -104.95152}, "transactions": ["delivery"],
+        "price": "$$$", "location": {"address1": "3030 E 6th Ave", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state":
+        "CO", "display_address": ["3030 E 6th Ave", "Denver, CO 80206"]}, "phone":
+        "+13033931040", "display_phone": "(303) 393-1040", "distance": 1955.8285006670892},
+        {"id": "6ThdJligZWCUCKjnbKgKFQ", "alias": "quality-italian-denver", "name":
+        "Quality Italian", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/NeJ0USJM05NpO2jSbWbW5Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/quality-italian-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 486, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "steak", "title":
+        "Steakhouses"}], "rating": 4.0, "coordinates": {"latitude": 39.72034414253415,
+        "longitude": -104.9573377}, "transactions": ["delivery"], "price": "$$$",
+        "location": {"address1": "241 Columbine St", "address2": "", "address3": null,
+        "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
+        ["241 Columbine St", "Denver, CO 80206"]}, "phone": "+13035328888", "display_phone":
+        "(303) 532-8888", "distance": 2016.8370514163819}, {"id": "psESMQAg6u2MNnY5DzGcDQ",
+        "alias": "appaloosa-grill-denver-6", "name": "Appaloosa Grill", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/YulHaMeaFH4eiBIyd1IQeg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/appaloosa-grill-denver-6?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1043, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "bars", "title": "Bars"}, {"alias": "steak", "title": "Steakhouses"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7444359, "longitude": -104.9909603},
+        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "535 16th St", "address2": "Ste 110", "address3": "", "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["535 16th St",
+        "Ste 110", "Denver, CO 80202"]}, "phone": "+17209321700", "display_phone":
+        "(720) 932-1700", "distance": 2023.2161090544384}, {"id": "tB--VwIjxovyIVsS0s0HdQ",
+        "alias": "blue-island-oyster-bar-and-seafood-denver", "name": "Blue Island
+        Oyster Bar and Seafood", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/pg75Qc7hk6L-tmSSqcfz2Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blue-island-oyster-bar-and-seafood-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 669, "categories": [{"alias": "seafood", "title": "Seafood"},
+        {"alias": "raw_food", "title": "Live/Raw Food"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.7196643, "longitude": -104.9568074}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "2625 E 2nd Ave", "address2": null,
+        "address3": "", "city": "Denver", "zip_code": "80206", "country": "US", "state":
+        "CO", "display_address": ["2625 E 2nd Ave", "Denver, CO 80206"]}, "phone":
+        "+13033332462", "display_phone": "(303) 333-2462", "distance": 2104.9313728943903},
+        {"id": "SPX2s5yt1jam4Jd1niyX7A", "alias": "bastiens-denver", "name": "Bastien''s",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/wD_DvWxXLuk842vYjOL7Rw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bastiens-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 532, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "burgers", "title": "Burgers"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.74049, "longitude": -104.9462},
+        "transactions": ["delivery"], "price": "$$$", "location": {"address1": "3503
+        E Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["3503 E Colfax
+        Ave", "Denver, CO 80206"]}, "phone": "+13033220363", "display_phone": "(303)
+        322-0363", "distance": 2122.878160475598}, {"id": "EjNI-dNAMrYxKgUIkqeqhg",
+        "alias": "guard-and-grace-denver", "name": "Guard and Grace", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/yu3vfsM6s_LpSvEBed75Mw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/guard-and-grace-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1496, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.5, "coordinates": {"latitude": 39.7476811908831,
+        "longitude": -104.989654496312}, "transactions": ["delivery", "pickup"], "price":
+        "$$$", "location": {"address1": "1801 California St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["1801 California St", "Denver, CO 80202"]}, "phone": "+13032938500",
+        "display_phone": "(303) 293-8500", "distance": 2140.4033736245196}, {"id":
+        "57a4ZF4EQA-hESKM2pCi4w", "alias": "ruths-chris-steak-house-denver-5", "name":
+        "Ruth''s Chris Steak House", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-3yaw4NTyc9aQTbgnwjFZQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ruths-chris-steak-house-denver-5?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 415, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "wine_bars", "title":
+        "Wine Bars"}], "rating": 3.5, "coordinates": {"latitude": 39.7445321277407,
+        "longitude": -104.993398431834}, "transactions": ["delivery", "pickup"], "price":
+        "$$$", "location": {"address1": "707 15th St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["707 15th St", "Denver, CO 80202"]}, "phone": "+13038250713",
+        "display_phone": "(303) 825-0713", "distance": 2218.64040896289}, {"id": "qH1rIpZRPlJ-qWPeRojtig",
+        "alias": "elways-denver-5", "name": "Elway''s", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/z9wlKaZFTPA2wn03KZaVoQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/elways-denver-5?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 755, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "venues", "title": "Venues & Event Spaces"}, {"alias": "tradamerican",
+        "title": "American (Traditional)"}], "rating": 4.0, "coordinates": {"latitude":
+        39.717494, "longitude": -104.957312}, "transactions": ["delivery", "pickup"],
+        "price": "$$$", "location": {"address1": "2500 E 1st Ave", "address2": "Ste
+        101", "address3": "", "city": "Denver", "zip_code": "80206", "country": "US",
+        "state": "CO", "display_address": ["2500 E 1st Ave", "Ste 101", "Denver, CO
+        80206"]}, "phone": "+13033995353", "display_phone": "(303) 399-5353", "distance":
+        2289.731125922746}, {"id": "k1mGLPBSaUhZKem1KrXLJQ", "alias": "stout-street-social-denver-2",
+        "name": "Stout Street Social", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/vHeNR3kurc_OVv4uU0Dydw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/stout-street-social-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1286, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "seafood", "title": "Seafood"}, {"alias": "beer_and_wine",
+        "title": "Beer, Wine & Spirits"}], "rating": 4.0, "coordinates": {"latitude":
+        39.74413, "longitude": -104.99501}, "transactions": ["delivery", "pickup"],
+        "price": "$$", "location": {"address1": "1400 Stout St", "address2": null,
+        "address3": "", "city": "Denver", "zip_code": "80202", "country": "US", "state":
+        "CO", "display_address": ["1400 Stout St", "Denver, CO 80202"]}, "phone":
+        "+17202149100", "display_phone": "(720) 214-9100", "distance": 2315.429303434833},
+        {"id": "d2ru6HhcKITjBx1rXETAfA", "alias": "little-india-restaurant-champa-downtown-denver-2",
+        "name": "Little India Restaurant Champa Downtown", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/GSUBULpoXfrI5fF-rPsNvw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-india-restaurant-champa-downtown-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 579, "categories": [{"alias": "indpak", "title": "Indian"},
+        {"alias": "gluten_free", "title": "Gluten-Free"}, {"alias": "wine_bars", "title":
+        "Wine Bars"}], "rating": 3.5, "coordinates": {"latitude": 39.746185, "longitude":
+        -104.994633}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "1533 Champa St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["1533
+        Champa St", "Denver, CO 80202"]}, "phone": "+13036295777", "display_phone":
+        "(303) 629-5777", "distance": 2398.6064823063803}, {"id": "K_lrOq9edOUqRx5ZmuwMZw",
+        "alias": "elways-downtown-denver-6", "name": "ELWAY''S Downtown", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/un3rkc6ctzx0tMzO-m3lcw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/elways-downtown-denver-6?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 605, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "newamerican", "title": "American (New)"}, {"alias": "seafood",
+        "title": "Seafood"}], "rating": 3.5, "coordinates": {"latitude": 39.749627,
+        "longitude": -104.991927}, "transactions": ["delivery", "pickup"], "price":
+        "$$$", "location": {"address1": "1881 Curtis St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["1881 Curtis St", "Denver, CO 80202"]}, "phone": "+13033123107",
+        "display_phone": "(303) 312-3107", "distance": 2428.096082283108}, {"id":
+        "SAYxCzMoUln-zjedORC3lQ", "alias": "del-friscos-grille-cherry-creek", "name":
+        "Del Frisco''s Grille", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HQZe0HBu8LBG1XgeTcdrJA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/del-friscos-grille-cherry-creek?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 362, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "seafood", "title": "Seafood"}, {"alias": "steak", "title":
+        "Steakhouses"}], "rating": 3.0, "coordinates": {"latitude": 39.7186668, "longitude":
+        -104.9507968}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "100 St Paul", "address2": "Ste 140", "address3": "", "city":
+        "Cherry Creek", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
+        ["100 St Paul", "Ste 140", "Cherry Creek, CO 80206"]}, "phone": "+13033208529",
+        "display_phone": "(303) 320-8529", "distance": 2505.979724759754}, {"id":
+        "f-OwBFgkmc4yuZqcHiwTIA", "alias": "801-chophouse-denver", "name": "801 Chophouse",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/bRlcz3DY_0K-qM7AMKflRw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/801-chophouse-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 235, "categories": [{"alias": "steak", "title": "Steakhouses"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7166989, "longitude": -104.9534064},
+        "transactions": ["delivery"], "price": "$$$", "location": {"address1": "3000
+        E 1st Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80206", "country": "US", "state": "CO", "display_address": ["3000 E 1st Ave",
+        "Denver, CO 80206"]}, "phone": "+13032146474", "display_phone": "(303) 214-6474",
+        "distance": 2540.7961812142894}, {"id": "8hCYiVB4MOawLiGgXu3rNQ", "alias":
+        "edge-restaurant-and-bar-denver", "name": "EDGE Restaurant and Bar", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/7um-uUb-H0Ca6xjTEFZdmg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/edge-restaurant-and-bar-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 438, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}], "rating": 4.0, "coordinates": {"latitude": 39.74655,
+        "longitude": -104.99796}, "transactions": ["delivery"], "price": "$$$", "location":
+        {"address1": "1111 14th St", "address2": "", "address3": "Four Seasons Hotel
+        Denver", "city": "Denver", "zip_code": "80202", "country": "US", "state":
+        "CO", "display_address": ["1111 14th St", "Four Seasons Hotel Denver", "Denver,
+        CO 80202"]}, "phone": "+13033893050", "display_phone": "(303) 389-3050", "distance":
+        2681.1315085072465}, {"id": "ziS-GJn-3Ux6t5l-0IUNog", "alias": "the-capital-grille-denver-3",
+        "name": "The Capital Grille", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9vq0DPr6IREbtyokt_NksA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-capital-grille-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 788, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "wine_bars", "title":
+        "Wine Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.747844377097934,
+        "longitude": -104.9986852186631}, "transactions": [], "price": "$$$", "location":
+        {"address1": "1450 Larimer St", "address2": null, "address3": "", "city":
+        "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["1450 Larimer St", "Denver, CO 80202"]}, "phone": "+13035392500", "display_phone":
+        "(303) 539-2500", "distance": 2790.9961771503904}, {"id": "pNVL0J-qaChARXtjXH3jHw",
+        "alias": "cr\u00fa-food-and-wine-bar-denver-2", "name": "CR\u00da Food & Wine
+        Bar", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/96HmQ9lMlh8S9tLymFtReQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cr%C3%BA-food-and-wine-bar-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 465, "categories": [{"alias": "wine_bars", "title": "Wine
+        Bars"}, {"alias": "tradamerican", "title": "American (Traditional)"}], "rating":
+        4.0, "coordinates": {"latitude": 39.747894037835614, "longitude": -104.99890108244809},
+        "transactions": [], "price": "$$", "location": {"address1": "1442 Larimer
+        St", "address2": null, "address3": "", "city": "Denver", "zip_code": "80202",
+        "country": "US", "state": "CO", "display_address": ["1442 Larimer St", "Denver,
+        CO 80202"]}, "phone": "+13038939463", "display_phone": "(303) 893-9463", "distance":
+        2809.7894165935195}, {"id": "Ccq-R-tKcwvdl0oAYcP3cw", "alias": "ocean-prime-denver",
+        "name": "Ocean Prime", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/zo3qVUuBYVNKbUfxtbOerA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ocean-prime-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1013, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "seafood", "title": "Seafood"}, {"alias": "steak", "title":
+        "Steakhouses"}], "rating": 4.0, "coordinates": {"latitude": 39.74827969707599,
+        "longitude": -104.99898403774944}, "transactions": ["delivery"], "price":
+        "$$$", "location": {"address1": "1465 Larimer St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["1465 Larimer St", "Denver, CO 80202"]}, "phone": "+13038253663",
+        "display_phone": "(303) 825-3663", "distance": 2837.1635265608675}, {"id":
+        "hks-LDU4R-mJJvr9bBfguQ", "alias": "stk-steakhouse-denver-denver", "name":
+        "STK Steakhouse", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qPSrlaYTWrltOTWabxmhbA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/stk-steakhouse-denver-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 740, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "newamerican", "title": "American (New)"}, {"alias": "steak", "title": "Steakhouses"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.74935, "longitude": -104.99849},
+        "transactions": ["delivery", "pickup"], "price": "$$$", "location": {"address1":
+        "1550 Market St", "address2": null, "address3": null, "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1550 Market
+        St", "Denver, CO 80202"]}, "phone": "+17205978010", "display_phone": "(720)
+        597-8010", "distance": 2864.6729421701793}, {"id": "q1vlnz2s5JKrVX9Bs9QOvQ",
+        "alias": "buckhorn-exchange-restaurant-denver", "name": "Buckhorn Exchange
+        Restaurant", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/h2eZAIFFQT5CbcU8A4tuog/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/buckhorn-exchange-restaurant-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1065, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}, {"alias": "wine_bars",
+        "title": "Wine Bars"}], "rating": 3.5, "coordinates": {"latitude": 39.73238,
+        "longitude": -105.00494}, "transactions": ["delivery"], "price": "$$$", "location":
+        {"address1": "1000 Osage St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80204", "country": "US", "state": "CO", "display_address": ["1000
+        Osage St", "Denver, CO 80204"]}, "phone": "+13035349505", "display_phone":
+        "(303) 534-9505", "distance": 2978.348246614136}, {"id": "0-O-xCaxbO-ftWVEYVrRlg",
+        "alias": "barcelona-wine-bar-rino-denver", "name": "Barcelona Wine Bar RiNo",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/jM7x9GxF8rZx3SgA8AMlog/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/barcelona-wine-bar-rino-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 800, "categories": [{"alias": "tapasmallplates", "title":
+        "Tapas/Small Plates"}, {"alias": "wine_bars", "title": "Wine Bars"}, {"alias":
+        "spanish", "title": "Spanish"}], "rating": 4.5, "coordinates": {"latitude":
+        39.76129, "longitude": -104.9813}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "2900 Larimer St", "address2": null, "address3":
+        "", "city": "Denver", "zip_code": "80205", "country": "US", "state": "CO",
+        "display_address": ["2900 Larimer St", "Denver, CO 80205"]}, "phone": "+13038163300",
+        "display_phone": "(303) 816-3300", "distance": 3015.517481703019}, {"id":
+        "fdeVBWzB4jZV7QupbQSXUg", "alias": "urban-farmer-denver-denver", "name": "Urban
+        Farmer Denver", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HAB0FR4A_n4tMKr198dADA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/urban-farmer-denver-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 544, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 4.0,
+        "coordinates": {"latitude": 39.75209, "longitude": -104.99929}, "transactions":
+        ["delivery", "pickup"], "price": "$$$", "location": {"address1": "1659 Wazee
+        St", "address2": "", "address3": null, "city": "Denver", "zip_code": "80202",
+        "country": "US", "state": "CO", "display_address": ["1659 Wazee St", "Denver,
+        CO 80202"]}, "phone": "+13032626070", "display_phone": "(303) 262-6070", "distance":
+        3087.417013123845}, {"id": "IFVAm31yNaKw5_Sa1TuP4g", "alias": "rodizio-grill-denver-denver",
+        "name": "Rodizio Grill - Denver", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/pOmP8_IAkEwMS-XfhERVsQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rodizio-grill-denver-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 510, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "brazilian", "title": "Brazilian"}, {"alias": "buffets", "title":
+        "Buffets"}], "rating": 3.5, "coordinates": {"latitude": 39.7539989260745,
+        "longitude": -104.998431005314}, "transactions": [], "price": "$$$", "location":
+        {"address1": "1801 Wynkoop St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80202", "country": "US", "state": "CO", "display_address": ["1801
+        Wynkoop St", "Denver, CO 80202"]}, "phone": "+13032949277", "display_phone":
+        "(303) 294-9277", "distance": 3166.5899194974695}, {"id": "V2wsNh2gEVeIulBkTqkZHw",
+        "alias": "chophouse-and-brewery-denver", "name": "ChopHouse and Brewery",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/62MH9b4EPrEMjrvMHgBOtg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chophouse-and-brewery-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 764, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.75502071, "longitude": -104.99731184}, "transactions": ["delivery",
+        "pickup"], "price": "$$$", "location": {"address1": "1735 19th St", "address2":
+        "Ste 100", "address3": "", "city": "Denver", "zip_code": "80202", "country":
+        "US", "state": "CO", "display_address": ["1735 19th St", "Ste 100", "Denver,
+        CO 80202"]}, "phone": "+13032960800", "display_phone": "(303) 296-0800", "distance":
+        3170.94813273426}, {"id": "YF-gq920WMtLYs0kHGEpAw", "alias": "stoic-and-genuine-denver-4",
+        "name": "Stoic & Genuine", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/mAtB6fbTBucC8R_IXhty-w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/stoic-and-genuine-denver-4?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 669, "categories": [{"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.75289994525605, "longitude":
+        -105.00027815484022}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "1701 Wynkoop St", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["1701 Wynkoop St", "Denver, CO 80202"]}, "phone": "+13036403474", "display_phone":
+        "(303) 640-3474", "distance": 3213.463216316819}, {"id": "CgLgPcezLSD0h3SS4f--iQ",
+        "alias": "fogo-de-chao-steakhouse-denver-denver", "name": "Fogo De Chao Steakhouse
+        - Denver", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/LKdc7bX4qTuJBpvQTRgenQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fogo-de-chao-steakhouse-denver-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 1076, "categories": [{"alias": "brazilian", "title": "Brazilian"},
+        {"alias": "steak", "title": "Steakhouses"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.75121852288996, "longitude": -105.0020875858965}, "transactions":
+        ["delivery", "pickup"], "price": "$$$", "location": {"address1": "1513 Wynkoop
+        St", "address2": "", "address3": "", "city": "Denver", "zip_code": "80202",
+        "country": "US", "state": "CO", "display_address": ["1513 Wynkoop St", "Denver,
+        CO 80202"]}, "phone": "+13036239600", "display_phone": "(303) 623-9600", "distance":
+        3233.794797000557}, {"id": "u5HvR26VlVlakU3WIB3PVA", "alias": "citizen-rail-denver",
+        "name": "Citizen Rail", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kfsVFgEFVZutv1XhkMhazw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/citizen-rail-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 398, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "seafood", "title": "Seafood"}, {"alias": "burgers", "title": "Burgers"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.75321, "longitude": -105.00221},
+        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "1899 16th St", "address2": null, "address3": null, "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1899 16th St",
+        "Denver, CO 80202"]}, "phone": "+13033230017", "display_phone": "(303) 323-0017",
+        "distance": 3366.834832782013}, {"id": "b6mLmT6x35GH8X7eOiGvwg", "alias":
+        "the-bindery-denver-2", "name": "The Bindery", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/uaFfWPy9qz1mWb0xJMcJyA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-bindery-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 401, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
+        "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        39.76068, "longitude": -105.00649}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "1817 Central St", "address2": "", "address3":
+        null, "city": "Denver", "zip_code": "80211", "country": "US", "state": "CO",
+        "display_address": ["1817 Central St", "Denver, CO 80211"]}, "phone": "+13039932364",
+        "display_phone": "(303) 993-2364", "distance": 4177.302965110913}, {"id":
+        "46gG3_h3zwFfkf4_183Ydg", "alias": "somebody-people-denver", "name": "Somebody
+        People", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/si8mff0K6-SyO0bvShjBAQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/somebody-people-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 230, "categories": [{"alias": "wine_bars", "title": "Wine
+        Bars"}, {"alias": "cocktailbars", "title": "Cocktail Bars"}, {"alias": "mediterranean",
+        "title": "Mediterranean"}], "rating": 4.5, "coordinates": {"latitude": 39.695218,
+        "longitude": -104.987801}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "1165 S Broadway", "address2": "Ste 104", "address3": null, "city":
+        "Denver", "zip_code": "80210", "country": "US", "state": "CO", "display_address":
+        ["1165 S Broadway", "Ste 104", "Denver, CO 80210"]}, "phone": "+17205025681",
+        "display_phone": "(720) 502-5681", "distance": 4735.425404106732}, {"id":
+        "2eZzw4MX2MhLzUnIq0Ws5g", "alias": "the-asian-cajun-denver", "name": "The
+        Asian Cajun", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/pkBgic04J41FovcmIq82dg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-asian-cajun-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 558, "categories": [{"alias": "cajun", "title": "Cajun/Creole"},
+        {"alias": "vietnamese", "title": "Vietnamese"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.0, "coordinates": {"latitude": 39.71091, "longitude":
+        -105.01604}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "2400 W Alameda Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80223", "country": "US", "state": "CO", "display_address":
+        ["2400 W Alameda Ave", "Denver, CO 80223"]}, "phone": "+13039220699", "display_phone":
+        "(303) 922-0699", "distance": 4770.734923735857}, {"id": "-XgOAeeFevghWxT_SvcW5w",
+        "alias": "yummy-hot-pot-denver-2", "name": "Yummy Hot Pot", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/q_4jjhMv8zzt20ukR4xrGA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/yummy-hot-pot-denver-2?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 223, "categories": [{"alias": "hotpot", "title": "Hot Pot"},
+        {"alias": "seafood", "title": "Seafood"}], "rating": 4.5, "coordinates": {"latitude":
+        39.71091, "longitude": -105.01723}, "transactions": ["delivery", "pickup"],
+        "price": "$$", "location": {"address1": "2500 W Alameda Ave", "address2":
+        "", "address3": null, "city": "Denver", "zip_code": "80219", "country": "US",
+        "state": "CO", "display_address": ["2500 W Alameda Ave", "Denver, CO 80219"]},
+        "phone": "+13039348888", "display_phone": "(303) 934-8888", "distance": 4854.234508833364},
+        {"id": "2CSLeJMLjK_qKrIvOxMFKw", "alias": "columbine-steak-house-and-lounge-denver",
+        "name": "Columbine Steak House & Lounge", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/cZFCxEYguhBGcpbUHxe08w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/columbine-steak-house-and-lounge-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 336, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "lounges", "title": "Lounges"}], "rating": 4.0, "coordinates": {"latitude":
+        39.72129, "longitude": -105.02483}, "transactions": ["delivery"], "price":
+        "$$", "location": {"address1": "300 Federal Blvd", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80219", "country": "US", "state": "CO",
+        "display_address": ["300 Federal Blvd", "Denver, CO 80219"]}, "phone": "+13039369110",
+        "display_phone": "(303) 936-9110", "distance": 4926.725406112855}, {"id":
+        "v2TMgEHyz4nUzuaERy__BA", "alias": "patzcuaros-denver", "name": "Patzcuaro''s",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JUAyrtX-bAhAGuCBCom_jw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/patzcuaros-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 428, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.76179, "longitude": -105.01943},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "2616
+        W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["2616 W 32nd
+        Ave", "Denver, CO 80211"]}, "phone": "+13034554389", "display_phone": "(303)
+        455-4389", "distance": 5124.050330747342}, {"id": "XFsr57iiMGVpLmSrqZnrEQ",
+        "alias": "nonnas-chicago-bistro-denver-3", "name": "Nonnas Chicago Bistro",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/bMt0usn1DDLHULZyB5734g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/nonnas-chicago-bistro-denver-3?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 305, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "comfortfood", "title":
+        "Comfort Food"}], "rating": 4.0, "coordinates": {"latitude": 39.7028, "longitude":
+        -104.911849}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        {"address1": "6603 Leetsdale Dr", "address2": "H & I", "address3": "", "city":
+        "Denver", "zip_code": "80224", "country": "US", "state": "CO", "display_address":
+        ["6603 Leetsdale Dr", "H & I", "Denver, CO 80224"]}, "phone": "+13033992000",
+        "display_phone": "(303) 399-2000", "distance": 6179.5402276049}], "total":
+        55, "region": {"center": {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Mon, 12 Dec 2022 20:53:14 GMT
+recorded_with: VCR 6.1.0

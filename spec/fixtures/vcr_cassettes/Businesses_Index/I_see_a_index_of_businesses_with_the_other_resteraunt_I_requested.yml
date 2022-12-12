@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=40&location=Denver,%20CO&radius=16100&sort_by=distance&term=locally%20owned%20Potager
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer qJbWMO0dR5e1R2Ct-5hhhGqu1zFIWijMFZNdbEMyltQLfH79viaTuTi_NT80xYMNyfAEJkjobK889xM9F0lYQUie7kOW-g6qN1awpPj_v8xacW-ZA4PlFEhP4rOPY3Yx
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--uswest2-69cb4c47f7-kslj2; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2022-12-13T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 528dac0e10d7a2d2
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '4244'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Server:
+      - envoy
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-99-143-uswest2aprod
+      X-Extlb:
+      - 10-69-99-143-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 12 Dec 2022 20:53:13 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8252-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"businesses": [{"id": "T0oDpWqZWOjli02HuIO3DQ", "alias": "potager-denver",
+        "name": "Potager", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/hsNzVSuRj2OHZQyL4PAtiA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/potager-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 406, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}], "rating": 4.0, "coordinates": {"latitude": 39.73396, "longitude":
+        -104.97542}, "transactions": ["delivery"], "price": "$$$", "location": {"address1":
+        "1109 Ogden St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80218", "country": "US", "state": "CO", "display_address": ["1109 Ogden St",
+        "Denver, CO 80218"]}, "phone": "+13038325788", "display_phone": "(303) 832-5788",
+        "distance": 482.56686748177924}, {"id": "A9S4iGkRVNLWY8BSkRpDEA", "alias":
+        "fruition-restaurant-denver", "name": "Fruition Restaurant", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/otEVGuAtz5EiA-_jSdFqfQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/fruition-restaurant-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 905, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "bars", "title": "Bars"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.725696, "longitude": -104.97133}, "transactions": ["delivery"],
+        "price": "$$$", "location": {"address1": "1313 E 6th Ave", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80218", "country": "US", "state":
+        "CO", "display_address": ["1313 E 6th Ave", "Denver, CO 80218"]}, "phone":
+        "+13038311962", "display_phone": "(303) 831-1962", "distance": 1096.7751816744308},
+        {"id": "ydbPYReX0IrY1D41fLB3pA", "alias": "table-6-denver", "name": "Table
+        6", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f8OSSe7ZzIueKtcEnIY2eA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/table-6-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 498, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.7258, "longitude": -104.97428}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "609 Corona St", "address2": null,
+        "address3": "", "city": "Denver", "zip_code": "80218", "country": "US", "state":
+        "CO", "display_address": ["609 Corona St", "Denver, CO 80218"]}, "phone":
+        "+13038318800", "display_phone": "(303) 831-8800", "distance": 1132.5568514465483},
+        {"id": "XWqdMrdt8OJWT6ECMvavPw", "alias": "the-plimoth-denver", "name": "The
+        Plimoth", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BKcf-O6vx31cPWs48SbA1w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-plimoth-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 344, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "french", "title": "French"}, {"alias": "newamerican", "title":
+        "American (New)"}], "rating": 4.5, "coordinates": {"latitude": 39.7571433867367,
+        "longitude": -104.958879160049}, "transactions": ["delivery"], "price": "$$$",
+        "location": {"address1": "2335 E 28th Ave", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80205", "country": "US", "state": "CO", "display_address":
+        ["2335 E 28th Ave", "Denver, CO 80205"]}, "phone": "+13032971215", "display_phone":
+        "(303) 297-1215", "distance": 2592.922744790326}, {"id": "bgdlrLLePf1CnSco5j0VBw",
+        "alias": "bittersweet-artisanal-cuisine-denver", "name": "Bittersweet Artisanal
+        Cuisine", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/uNvWdvZsMLkVfS9I_mBuUA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bittersweet-artisanal-cuisine-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 251, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "french", "title": "French"}, {"alias": "italian", "title":
+        "Italian"}], "rating": 4.0, "coordinates": {"latitude": 39.71094, "longitude":
+        -104.98121}, "transactions": ["delivery"], "price": "$$$", "location": {"address1":
+        "500 E Alameda Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80209", "country": "US", "state": "CO", "display_address": ["500 E Alameda
+        Ave", "Denver, CO 80209"]}, "phone": "+13039420320", "display_phone": "(303)
+        942-0320", "distance": 2890.388425760037}, {"id": "LX8nS1dlW7MEZDDEmVcyGw",
+        "alias": "root-down-denver", "name": "Root Down", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/3pdxKRvI6U5DjE9hEnkAXQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/root-down-denver?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 3735, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "vegan", "title": "Vegan"}, {"alias": "vegetarian", "title":
+        "Vegetarian"}], "rating": 4.5, "coordinates": {"latitude": 39.76306, "longitude":
+        -105.0056}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "1600 W 33rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["1600 W 33rd
+        Ave", "Denver, CO 80211"]}, "phone": "+13039934200", "display_phone": "(303)
+        993-4200", "distance": 4303.986533452191}, {"id": "_nAgQgTcV2YslQyUSmnw8Q",
+        "alias": "annette-aurora", "name": "Annette", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jvr-2TBioovg5Fu4xXwIgw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/annette-aurora?adjust_creative=TWv4BIcu6CZ_3-f_0lItOQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TWv4BIcu6CZ_3-f_0lItOQ",
+        "review_count": 360, "categories": [{"alias": "wine_bars", "title": "Wine
+        Bars"}, {"alias": "newamerican", "title": "American (New)"}, {"alias": "cocktailbars",
+        "title": "Cocktail Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.75223,
+        "longitude": -104.87738}, "transactions": ["delivery"], "price": "$$$", "location":
+        {"address1": "2501 Dallas St", "address2": "", "address3": null, "city": "Aurora",
+        "zip_code": "80010", "country": "US", "state": "CO", "display_address": ["2501
+        Dallas St", "Aurora, CO 80010"]}, "phone": "+17207109975", "display_phone":
+        "(720) 710-9975", "distance": 8174.803567980656}], "total": 7, "region": {"center":
+        {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Mon, 12 Dec 2022 20:53:13 GMT
+recorded_with: VCR 6.1.0
