@@ -22,8 +22,10 @@ ActiveRecord::Schema.define(version: 2022_12_03_163044) do
     t.float "rating"
     t.string "url"
     t.string "image"
-    t.string "is_closed"
+    t.string "price"
     t.string "phone"
+    t.float "latitude"
+    t.float "longitude"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
