@@ -9,8 +9,10 @@ module Types
     field :rating, Float
     field :url, String
     field :image, String
-    field :is_closed, String
+    field :price, String
     field :phone, String
+    field :latitude, Float
+    field :longitude, Float
     field :user_id, Integer
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
