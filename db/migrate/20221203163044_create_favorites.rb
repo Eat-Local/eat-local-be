@@ -12,7 +12,7 @@ class CreateFavorites < ActiveRecord::Migration[5.2]
       t.string :price
       t.string :phone
       t.float :latitude
-      t.float :longitude 
+      t.float :longitude
       t.belongs_to :user, foreign_key: true
 
       t.timestamps

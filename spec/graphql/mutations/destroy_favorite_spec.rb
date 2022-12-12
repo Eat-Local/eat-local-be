@@ -41,7 +41,7 @@ RSpec.describe Mutations::DestroyFavorite, type: :graphql do
     expect(user.favorites.count).to eq(6)
     expect(user.favorites.first.id).to eq(1)
     result = EatLocalBeSchema.execute(query)
-    
+
     expect(user.favorites.count).to eq(5)
     expect(result['data']['destroyFavorite']['user']['favorites'][0]['id']).to_not eq('1')
     expect(result['data']['destroyFavorite']['user']['favorites'][1]['id']).to_not eq('1')
