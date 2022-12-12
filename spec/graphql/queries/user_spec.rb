@@ -22,8 +22,10 @@ RSpec.describe 'Query user', type: :graphql do
                 rating
                 url
                 image
-                isClosed
+                price
                 phone
+                latitude
+                longitude
                 userId
             }
           }
@@ -46,7 +48,7 @@ RSpec.describe 'Query user', type: :graphql do
     expect(result['data']['user']['favorites'][0]).to have_key('rating')
     expect(result['data']['user']['favorites'][0]).to have_key('url')
     expect(result['data']['user']['favorites'][0]).to have_key('image')
-    expect(result['data']['user']['favorites'][0]).to have_key('isClosed')
+    expect(result['data']['user']['favorites'][0]).to have_key('price')
     expect(result['data']['user']['favorites'][0]).to have_key('phone')
     expect(result['data']['user']['favorites'][0]['userId']).to eq(user.id)
   end
@@ -68,8 +70,10 @@ RSpec.describe 'Query user', type: :graphql do
                 rating
                 url
                 image
-                isClosed
+                price
                 phone
+                latitude
+                longitude
                 userId
             }
           }

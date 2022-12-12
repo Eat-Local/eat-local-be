@@ -21,8 +21,10 @@
       rating: Faker::Number.between(from: 3.1, to: 5.0).round(1),
       url: Faker::Internet.url,
       image: Faker::Internet.url,
-      is_closed: 'true',
-      phone: Faker::PhoneNumber.cell_phone
+      price: Faker::Currency.symbol,
+      phone: Faker::PhoneNumber.cell_phone,
+      latitude: Faker::Address.latitude,
+      longitude: Faker::Address.longitude
     )
   end
 end

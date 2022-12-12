@@ -11,29 +11,36 @@ RSpec.describe Mutations::DestroyFavorite, type: :graphql do
       mutation {
           destroyFavorite(input: {
             id: 1
+            userId: 1
           }) {
-           favorite {
-             id,
-             title,
-             venueType,
-             address,
-             rating,
-             url,
-             image,
-             price,
-             phone,
-             latitude,
-             longitude,
-             userId
-           }
+            user {
+              id
+              email
+              fname
+              lname
+              favorites {
+                id
+                title
+                venueType
+                address
+                rating
+                url
+                image
+                price
+                phone
+                latitude
+                longitude
+                userId
+              }
+            }
            errors
-        }
-      }
+          }
+          }
     GQL
 
     expect(user.favorites.count).to eq(6)
-
     result = EatLocalBeSchema.execute(query)
+  
 
 
     expect(user.favorites.count).to eq(5)
