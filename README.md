@@ -129,7 +129,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
 
 <div align="center">
-  <img width="441" alt="Screen Shot 2022-12-02 at 7 38 59 PM (1)" src="https://user-images.githubusercontent.com/105956031/206585894-6148119b-369e-4f05-8e2e-5ad258c25b99.png">
+  <img width="441" alt="Screen Shot 2022-12-13 at 2 05 34 PM" src="https://user-images.githubusercontent.com/105956031/207443327-6872b886-18b2-4429-871f-81bc386b95c4.png">
 </div>
 
 
@@ -142,16 +142,17 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 ## Endpoints
 
 * GET a user by email
+
   ```
   query getUsers {
-  user(email: "email"){
-          fname
-          lname
-          email
-          favorites {
-              title
-          }
-      }
+    user(email: "email"){
+        fname
+        lname
+        email
+        favorites {
+            title
+        }
+    }
   }
   ```
 
@@ -161,16 +162,16 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
   mutation {
     createUser(input: {
     email: "freddyf@fakeemail.com",
-      fname: "Fred",
-      lname: "Fredson"
+    fname: "Fred",
+    lname: "Fredson"
     }) {
-      user {
-        id,
-        email,
-        fname,
-        lname
+    user {
+      id,
+      email,
+      fname,
+      lname
       }
-      errors
+    errors
     }
   }
   ```
@@ -179,47 +180,73 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
   ```
   mutation {
-   createFavorite(input: {
-      title: "place",
-      venueType: "brewery",
-      address: "123 Fake street, Denver, CO, 80205"
-      rating: "2.2",
-      url: "www.fake.com",
-      image: "www.fakepic.com",
-      isClosed: "true",
-      phone: "(303) 123-4567",
-      userId: "4"
-    }) 
-      {
-      favorite {
-        id,
-        title,
-        venueType,
-        address,
-        rating,
-        url,
-        image,
-        isClosed,
-        phone,
-        userId
+          createFavorite(input: {
+            title: "place",
+            venueType: "brewery",
+            address: "123 Fake street, Denver, CO, 80205"
+            rating: "2.2",
+            url: "www.fake.com",
+            image: "www.fakepic.com",
+            price: "a kings ransom",
+            phone: "(303) 123-4567",
+            latitude: "39.7392",
+            longitude: "-104.9903",
+            userId: "1"
+          }) {
+            user {
+              id,
+              email,
+              fname,
+              lname
+              favorites {
+                id,
+                title,
+                venueType,
+                address,
+                rating,
+                url,
+                image,
+                price,
+                phone,
+                latitude,
+                longitude,
+                userId
+              }
+            }
+           errors
+          }
         }
-    errors
-      }
-    }
   ```
 
 * DESTROY a user favorite
 
   ```
-    mutation {
-  destroyFavorite(input: {
-              id: 31
-            }) {
-            favorite {
-              id,
-
+     mutation {
+          destroyFavorite(input: {
+            id: 1
+            userId: 1
+          }) {
+            user {
+              id
+              email
+              fname
+              lname
+              favorites {
+                id
+                title
+                venueType
+                address
+                rating
+                url
+                image
+                price
+                phone
+                latitude
+                longitude
+                userId
+              }
             }
-            errors
+           errors
           }
         }
     ```
