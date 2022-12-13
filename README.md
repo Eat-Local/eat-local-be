@@ -129,7 +129,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
 
 <div align="center">
-  <img width="441" alt="Screen Shot 2022-12-02 at 7 38 59 PM (1)" src="https://user-images.githubusercontent.com/105956031/206585894-6148119b-369e-4f05-8e2e-5ad258c25b99.png">
+  <img width="441" alt="Screen Shot 2022-12-13 at 2 05 34 PM" src="https://user-images.githubusercontent.com/105956031/207443327-6872b886-18b2-4429-871f-81bc386b95c4.png">
 </div>
 
 
