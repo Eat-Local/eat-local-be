@@ -24,8 +24,21 @@ class Business
     @site = data[:url]
     @img = data[:image_url]
     @is_closed = data[:is_closed]
-    @price = data[:price]
+    @price = price_conversion(data[:price])
     @display_phone = data[:display_phone]
     @coordinates = data[:coordinates]
+  end
+
+  private
+
+  def price_conversion(data)
+    case data
+    when '$'
+      'Bargain-basement'
+    when '$$'
+      "Sir, this is a Wendy's"
+    when '$$$'
+      "Worth a King's ransom"
+    end
   end
 end
