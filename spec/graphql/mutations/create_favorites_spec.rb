@@ -14,7 +14,10 @@ RSpec.describe Mutations::CreateFavorite, type: :graphql do
             rating: "2.2",
             url: "www.fake.com",
             image: "www.fakepic.com",
+            price: "a kings ransom",
             phone: "(303) 123-4567",
+            latitude: "39.7392",
+            longitude: "-104.9903",
             userId: "1"
           }) {
             user {
@@ -30,7 +33,10 @@ RSpec.describe Mutations::CreateFavorite, type: :graphql do
                 rating,
                 url,
                 image,
+                price,
                 phone,
+                latitude,
+                longitude,
                 userId
               }
             }

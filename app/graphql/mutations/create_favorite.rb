@@ -8,8 +8,10 @@ module Mutations
     argument :rating, String, required: true
     argument :url, String, required: true
     argument :image, String, required: true
-    argument :is_closed, String, required: false
+    argument :price, String, required: true
     argument :phone, String, required: true
+    argument :latitude, String, required: true
+    argument :longitude, String, required: true
     argument :user_id, String, required: true
 
     field :user, Types::UserType, null: false
@@ -17,10 +19,11 @@ module Mutations
     field :errors, [String], null: false
 
     def resolve(title:, venue_type:, address:, rating:, url:,
-                image:, phone:, user_id:)
+                image:, price:, phone:, latitude:, longitude:, user_id:)
       user = User.find(user_id)
       favorite = user.favorites.new(title: title, venue_type: venue_type, address: address, rating: rating,
-                                    url: url, image: image, phone: phone, user_id: user.id)
+                                    url: url, image: image, price: price, phone: phone,
+                                    latitude: latitude, longitude: longitude, user_id: user.id)
       favorite.save
       {
         user: user,

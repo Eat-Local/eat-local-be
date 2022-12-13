@@ -14,6 +14,9 @@ RSpec.describe Favorite, type: :model do
     expect(favorite.rating).to be_a Float
     expect(favorite.url).to be_a String
     expect(favorite.image).to be_a String
+    expect(favorite.price).to be_a String
     expect(favorite.phone).to be_a String
+    expect(favorite.latitude).to be_a Float
+    expect(favorite.longitude).to be_a Float
   end
 end
