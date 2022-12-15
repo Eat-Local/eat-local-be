@@ -320,7 +320,7 @@ The Eat Local backend is build on Rails 5.2.8.1 and Ruby 2.7.4
 
 
 Front-End Project Link: [Eat Local FE](https://github.com/Eat-Local/eat-local-fe)
-Production Site: [Eat Local] (https://eatlocal.vercel.app/)
+Production Site: [Eat Local](https://eatlocal.vercel.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
